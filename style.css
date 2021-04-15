@@ -2,3 +2,12 @@
 body{
     font-family: 'Playfair Display', serif;
 }
+
+.nav-link {
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+.navbar {
+    height: 100px;
+}
