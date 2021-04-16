@@ -12,13 +12,7 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .fade {
-            height: 20vh;
-            width: 100vw;
-           background-color: blue;
-            z-index: 3;
-            color: black;
-        }
+     
       .wrapper {
         height: 100vh;
         width: 100vw;
@@ -30,11 +24,31 @@
         
       
       }  
-      .bg-dark{
-          opacity: 50%;
-      }
-    
+      /* Set the size of the div element that contains the map */
+        #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+        }
     </style>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          const uluru = { lat: -25.344, lng: 131.036 };
+          // The map, centered at Uluru
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: uluru,
+          });
+          // The marker, positioned at Uluru
+          const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+          });
+        }
+      </script>
 
 </head>
 <body>
@@ -42,8 +56,8 @@
 
 <!-- paralax image heading-->
 <div class="wrapper overflow-hidden ">
-    <header class="sticky-top ">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <header class="">
+        <nav class="navbar navbar-expand-lg static-top  navbar-dark">
             <div class="container">
               <a class="navbar-brand fs-6" href="#">
                     Hilltop B&B
@@ -54,38 +68,41 @@
               <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="index.html" title="Homepage" target="_blank">Home
+                    <a class="nav-link" href="index.html" title="Homepage" >Home
                           <span class="sr-only">(current)</span>
                         </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="service.html" title="Services" target="_blank">Services</a>
+                    <a class="nav-link" href="service.html" title="Services" >Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="explore.html" title="Explore" target="_blank">Explore</a>
+                    <a class="nav-link" href="explore.html" title="Explore" >Explore</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact.html" title="Contact" target="_blank">Contact</a>
+                    <a class="nav-link" href="contact.html" title="Contact" >Contact</a>
                   </li>
                 </ul>
               </div>
             </div>
-        </nav>        
+        </nav>  
+    
+        </nav>  
     </header>
-    <div class="row  align-content-center">
+    <div class="row h-100 align-content-center">
         <h1 class="h1 mx-auto text-white">Find out more about us</h1>
     </div>
-    <div class="fade">
-
-    </div>
-    
-</div>
+  </div>
 
 <div class="container p-5 ">
     <div class="row align-items-center">
         <h1 class="text-center col">
             We are
         </h1>
+    </div>
+    <div class="row" >
+        <div class="">
+
+        </div>
     </div>
     <div class="row" >
         <div class="col-md-6 text-center" >
@@ -111,8 +128,9 @@
 
         </div>
     </div>
-    <div class="fade">
-        <p></p>
+    <div class="row">
+        <div id="map"></div>
+
     </div>
 </div>
 
@@ -123,7 +141,10 @@
 </footer>
 
 <!-- Optional JavaScript -->
-
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
 
 
 
