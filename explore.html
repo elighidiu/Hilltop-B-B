@@ -12,56 +12,148 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        .btn-g {
+            color: #e3dcd2;
+            background-color: #013328;
+            border-color: #013328;
+        }
+        .btn-hover:hover {
+            color: #100c0d;
+            text-decoration: none;
+            background-color: #e3dcd2;
+            font-size: larger;
+        }
+
+        .wrapper {
+            height: 100vh;
+            width: 100vw;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            z-index: 0;
+        } 
+
+        .bg-explore{
+            background-image: url(images/dear.jpeg);
+        }
         
+        .img-explore{
+            width: 100%;
+            height:400px;
+            object-position:0 80%;
+            object-fit: cover;         
+        }
+        .bg-green{
+            background-color: #013328;
+            color:white;
+        }
     
     </style>
 
 </head>
 <body>
-    <header>
-        <!--Navigation bar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-            <div class="container">
-                <!--Company name-->
-                <a class="navbar-brand fs-6" href="#">
-                 Hilltop B&B
-                </a>
-                <!--toggler-icon-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <!--Nav Home-->
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html" title="Homepage">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <!--Nav Services-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="service.html" title="Services">Services</a>
-                        </li>
-                        <!--Nav Explore-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="explore.html" title="Explore">Explore</a>
-                        </li>
-                        <!--Nav Contact-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html" title="Contact">Contact</a>
-                        </li>
-                    </ul>
+ <!--contents starts-->
+    
+    <!--Nav & Hero image div-->
+    <div class="wrapper bg-explore">
+        <header>
+            <!--Nav menu-->
+            <nav class="navbar navbar-expand-lg static-top  navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand fs-6" href="#">
+                        Hilltop B&B
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html" title="Homepage">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="service.html" title="Services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="explore.html" title="Explore">Explore</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html" title="Contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>        
-    </header>
+            </nav>
+        </header>
 
-    <!--contents starts-->
-    <div class="container-fluid">
-        <!--Hero-->
-        <div>
-            <img src="img/dear.jpeg">
+        <!--Hero image-->
+        <div class="row h-100 w-auto mx-auto align-content-center">
+            <h1 class="h1 mx-auto text-white">Explore<br class="d-lg-none"> the neighbourhood</h1>
         </div>
+
+    </div>
+    <!--Nav & Hero image div finish-->
+
+    <!--Activity in nature-->
+    <div class="container-fluid p-5">
+        <h2 class="text-center">Activities in nature</h2>
+        <!--Hike-->
+        <div class="row align-items-center p-lg-5 p-md-5 pt-sm-3">
+            <div class=" col-md-6 col-sm-12">
+                <h3>
+                    Hike
+                </h3>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <figure class="figure">
+                    <img src="images/hike-image-w500.jpg" class="img-explore">
+                </figure>            
+            </div>
+        </div>
+        <!--Bike-->
+        <div class="row align-items-center p-lg-5 p-md-5 p-sm-3 flex-wrap-reverse">
+            <div class="col-md-6 col-sm-12">
+                <figure class="figure">
+                    <img src="images/bike.jpeg" class="img-explore">
+                </figure>            
+            </div>
+            <div class=" col-md-6 col-sm-12">
+                <h3>
+                    Bike
+                </h3>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Activity in nature finish-->
+ 
+     <!--Learn the history-->
+    <div class="container-fluid p-5 bg-green">
+        <h2 class="text-center">Learn the history</h2>
+    </div>
+    
 
 
 
