@@ -24,39 +24,16 @@
         
       
       }  
-      /* Set the size of the div element that contains the map */
-        #map {
-        height: 400px;
-        /* The height is 400 pixels */
-        width: 100%;
-        /* The width is the width of the web page */
-        }
+     
     </style>
-    <script>
-        // Initialize and add the map
-        function initMap() {
-          // The location of Uluru
-          const uluru = { lat: -25.344, lng: 131.036 };
-          // The map, centered at Uluru
-          const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 4,
-            center: uluru,
-          });
-          // The marker, positioned at Uluru
-          const marker = new google.maps.Marker({
-            position: uluru,
-            map: map,
-          });
-        }
-      </script>
-
+   
 </head>
 <body>
 <!-- Nav bar -->   
 
 <!-- paralax image heading-->
-<div class="wrapper overflow-hidden ">
-    <header class="">
+<div class="wrapper   ">
+    <header class=" position-sticky sticky-top">
         <nav class="navbar navbar-expand-lg static-top  navbar-dark">
             <div class="container">
               <a class="navbar-brand fs-6" href="#">
@@ -88,7 +65,7 @@
     
         </nav>  
     </header>
-    <div class="row h-100 align-content-center">
+    <div class="row h-100 w-auto mx-auto align-content-center">
         <h1 class="h1 mx-auto text-white">Find out more about us</h1>
     </div>
   </div>
@@ -99,13 +76,8 @@
             We are
         </h1>
     </div>
-    <div class="row" >
-        <div class="">
-
-        </div>
-    </div>
-    <div class="row" >
-        <div class="col-md-6 text-center" >
+    <div class="row  " >
+        <div class="col-md-5 text-center" >
             <h1 class="h1 my-3">
                 Johanna
             </h1>
@@ -113,24 +85,40 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue dolor, feugiat eget elit sed, venenatis feugiat elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut vehicula sapien eget mauris maximus rutrum. Aliquam feugiat scelerisque est eget pretium. Fusce sodales lacinia egestas. Aenean vehicula orci eget tristique maximus.
             </p>
         </div>
-        <div class="col-md-6 text-center" >
+        <div class="col-md-2 text-center" >
+            <h1 class="my-3 h1" >
+                &
+            </h1>
+        </div>
+        <div class="col-md-5 text-center" >
             <h1 class="h1 my-3">
                 Sebastian
             </h1>
-            <p class="text-left">
+            <p class="text-left"> 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed augue dolor, feugiat eget elit sed, venenatis feugiat elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut vehicula sapien eget mauris maximus rutrum. Aliquam feugiat scelerisque est eget pretium. Fusce sodales lacinia egestas. Aenean vehicula orci eget tristique maximus.
             </p>
         </div>
-    </div>    
+    </div>
+    
     <hr>
     <div class="row">
         <div class="col">
 
         </div>
     </div>
-    <div class="row">
-        <div id="map"></div>
-
+    <div class="row align-items-center">
+        <div class=" col-md-5 col-sm-12  ">
+            <h1>
+                Visit us
+            </h1>
+            <p>
+                We are always open for a glass of wine. 
+            </p>
+        </div>
+        <div class="col-md-7 col-sm-12 ">
+            <iframe class=" w-100 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.5456490729493!2d4.952407416079475!3d49.285005979331544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ea529385d870e7%3A0x952c893e97fcd218!2s4%20Rue%20Laloy%20Chenet%2C%2008250%20Ch%C3%A2tel-Ch%C3%A9h%C3%A9ry%2C%20Frankrijk!5e0!3m2!1snl!2sbe!4v1618565407950!5m2!1snl!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
     </div>
 </div>
 
@@ -141,10 +129,6 @@
 </footer>
 
 <!-- Optional JavaScript -->
-<script
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
 
 
 
