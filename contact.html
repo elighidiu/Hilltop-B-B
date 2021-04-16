@@ -12,13 +12,22 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        .fade {
+            height: 20vh;
+            width: 100vw;
+           background-color: blue;
+            z-index: 3;
+            color: black;
+        }
       .wrapper {
-        height: 80vh;
+        height: 100vh;
         width: 100vw;
         background-image: url(couple.jpg);
         background-position: center;
         background-attachment: fixed;
-    
+        margin: 0px;
+        z-index: 0;
+        
       
       }  
       .bg-dark{
@@ -32,7 +41,7 @@
 <!-- Nav bar -->   
 
 <!-- paralax image heading-->
-<div class="wrapper">
+<div class="wrapper overflow-hidden ">
     <header class="sticky-top ">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
             <div class="container">
@@ -63,12 +72,16 @@
             </div>
         </nav>        
     </header>
-    <div class="row h-100 align-content-center">
+    <div class="row  align-content-center">
         <h1 class="h1 mx-auto text-white">Find out more about us</h1>
     </div>
+    <div class="fade">
+
+    </div>
+    
 </div>
 
-<div class="container p-5 bg-light shadow">
+<div class="container p-5 ">
     <div class="row align-items-center">
         <h1 class="text-center col">
             We are
@@ -94,7 +107,12 @@
     </div>    
     <hr>
     <div class="row">
+        <div class="col">
 
+        </div>
+    </div>
+    <div class="fade">
+        <p></p>
     </div>
 </div>
 
