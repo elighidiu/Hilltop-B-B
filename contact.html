@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-
+    <meta  >
     <!-- Bootstrap CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet"><link>
 
@@ -16,9 +16,7 @@
       .wrapper {
         height: 100vh;
         width: 100vw;
-        background-image: url(images/couple.jpg);
-        background-position: center;
-        background-attachment: fixed;
+        
         margin: 0px;
         z-index: 0;
         
@@ -29,11 +27,11 @@
    
 </head>
 <body>
-<!-- Nav bar -->   
 
-<!-- paralax image heading-->
-<div class="wrapper   ">
-    <header class=" position-sticky sticky-top">
+<!-- paralax image heading with sticky nav-->
+<div class="wrapper   parallax-window" data-parallax="scroll" data-speed="0.5" data-bleed="10" data-image-src="./images/couple.jpg">
+    <!-- Nav -->
+    <header class=" position-sticky sticky-top  ">
         <nav class="navbar navbar-expand-lg static-top  navbar-dark">
             <div class="container">
               <a class="navbar-brand fs-6" href="#">
@@ -47,7 +45,7 @@
                   <li class="nav-item active">
                     <a class="nav-link" href="index.html" title="Homepage" >Home
                           <span class="sr-only">(current)</span>
-                        </a>
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="service.html" title="Services" >Services</a>
@@ -65,14 +63,15 @@
     
         </nav>  
     </header>
+    <!-- text over the image -->
     <div class="row h-100 w-auto mx-auto align-content-center">
-        <h1 class="h1 mx-auto text-white">Find out more about us</h1>
+        <h1 class="h1 mx-auto p-2 text-white">Find out more about us</h1>
     </div>
-  </div>
-
+</div>
+<!-- introduction section -->
 <div class="container p-5 ">
     <div class="row align-items-center">
-        <h1 class="text-center col">
+        <h1 class="text-center col display-4 ">
             We are
         </h1>
     </div>
@@ -100,21 +99,17 @@
         </div>
     </div>
     
-    <hr>
-    <div class="row">
-        <div class="col">
+    <hr class=" my-5">
 
-        </div>
-    </div>
+<!-- Location, invitation -->   
+
     <div class="row align-items-center">
         <div class=" col-md-5 col-sm-12  ">
-            <h1>
+            <h1 class="display-4 ">
                 Visit us
             </h1>
-            <p>
+            <p class="p font-italic">
                 We are always open for a glass of wine.
-                <form action="mailto:myforms@mydomain.com" 
-enctype="text/plain" onsubmit="location.href='thanks.html';" > 
             </p>
         </div>
         <div class="col-md-7 col-sm-12 ">
@@ -123,8 +118,29 @@ enctype="text/plain" onsubmit="location.href='thanks.html';" >
         
     </div>
 
+    <hr class=" my-5">
+
+
+    <div class="row align-items-center">
+        <div class=" col-md-5 col-sm-12  ">
+            <h1 class="display-4 ">
+                Visit us
+            </h1>
+            <p class="p font-italic">
+                We are always open for a glass of wine.
+            </p>
+        </div>
+        <div class="col-md-7 col-sm-12 ">
+            <iframe class=" w-100 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.5456490729493!2d4.952407416079475!3d49.285005979331544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ea529385d870e7%3A0x952c893e97fcd218!2s4%20Rue%20Laloy%20Chenet%2C%2008250%20Ch%C3%A2tel-Ch%C3%A9h%C3%A9ry%2C%20Frankrijk!5e0!3m2!1snl!2sbe!4v1618565407950!5m2!1snl!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+    </div>
+
+    <hr class=" my-5">
+<!-- Message form -->
+
     <div class="row w-100">
-        <div class="col-md-6 offset-md-3 mx-auto text-center  rounded">
+        <div class="col-lg-6 mx-auto text-center  rounded">
             <form class=""   enctype="multipart/form-data" name="EmailForm">
                 <div class="form-row">
                     <div class="form-group col-md-6 col-sm-12 ">
@@ -157,9 +173,44 @@ enctype="text/plain" onsubmit="location.href='thanks.html';" >
 
 <!-- Footer -->
 
-<footer class="container mb-3">
-    
-</footer>
+<footer class="container-fluid py-3 ">
+    <div class="container">
+        <div class="row">
+          
+            <div class="col-sm-12 col-md-3 col-lg-3 align-self-center">
+              <div class="text-center">
+                Hilltop B&B
+              </div>
+              
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <div class="text-center">
+               <p> Rue Laloy Chenet 4 08250 Chatel Chéhéry </p>
+               <p> Tel: +33 2 31 81 63 20</br>
+                  Mail: contact@hilltop.com
+                </p>
+              </div>
+  
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3  align-self-center">
+              <div class="text-center">
+                <img src="images/icons/facebook.png" alt="facebook" width="32" height="32">
+                <img src="images/icons/instagram.png" alt="instagram" width="32" height="32">
+                <img src="images/icons/tripadvisor.png" alt="trip advisor" width="32" height="32">
+                </div>
+  
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="text-center">
+            <p>&#169; 2021 Hilltop B&B. All rights reserved</p>
+          </div>
+          </div>
+        </div>
+    </div>  
+  </footer>
 <script lang="js">
     document.getElementById("Submitemail").addEventListener("click", function (e) {
         alert("Mail sent!")
@@ -173,6 +224,7 @@ enctype="text/plain" onsubmit="location.href='thanks.html';" >
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
 <script src="./js/jquery-3.6.0.min.js"></script>
+<script src="./js/parallax.js" ></script>
 <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>

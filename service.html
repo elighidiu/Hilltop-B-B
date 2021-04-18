@@ -38,26 +38,31 @@
         .wrapper {
             height: 100vh;
             width: 100vw;
-            background-image: url(images/test1.jpeg);
             background-position: center;
             background-attachment: fixed;
             margin: 0;
             z-index: 0;
             background-repeat: no-repeat;
             background-size: cover;
-
         }
 
         .marge {
-            width:60%;
+            width: 60%;
         }
+
         .marge2 {
             margin-left: 20%;
             margin-right: 20%;
         }
-        .achtergrondwit{
+
+        .achtergrondwit {
             background-color: #e0e0e0;
         }
+        .uitlijnen{
+
+            -webkit-text-stroke:0.1px black;
+        }
+
     </style>
 
 
@@ -65,7 +70,8 @@
 <body>
 
 
-<div class="wrapper overflow-hidden ">
+<div class="wrapper   parallax-window mb-5 " data-parallax="scroll" data-speed="0.5" data-bleed="10"
+     data-image-src="images/DSC_5636-300x202.png">
     <header>
         <nav class="navbar navbar-expand-lg static-top  navbar-dark">
             <div class="container">
@@ -78,19 +84,17 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html" title="Homepage" target="_blank">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html" title="Homepage" target="">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="service.html" title="Services">Services</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="service.html" title="Services">Services <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="explore.html" title="Explore">Explore</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html" title="Contact" target="_blank">Contact</a>
+                            <a class="nav-link" href="contact.html" title="Contact" target="">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -98,20 +102,25 @@
         </nav>
     </header>
 
-    <div class="row h-100 align-content-center">
-        <h1 class="h1 mx-auto text-white">All our services</h1>
+    <div class="row h-100 align-content-center ">
+        <h1 class="h1 mx-auto text-white uitlijnen">All our services</h1>
     </div>
 
 </div>
 
-<div class="container-fluid text-center my-5 marge">
+<div class="container-fluid text-center  marge py-5">
     <h1>Special Services</h1>
-    <p class="my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<hr>
+    <p class="my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</p>
+
 
 </div>
+<hr class="marge">
 
-<div class="container-fluid text-center mt-5">
+<div class="container-fluid text-center mt-5 py-5">
     <h1>Tariffs</h1>
     <div class="row  justify-content-around marge2">
 
@@ -215,7 +224,8 @@
             </div>
 
             <div class="modal-footer">
-                <button type="submit" class="btn btn-hover btn-g rounded-pill font-weight-bold">Submit reservation
+                <button type="submit" class="btn btn-hover btn-g rounded-pill font-weight-bold" title="Submit"
+                        data-toggle="modal" data-target="#myModalSu" data-dismiss="modal">Submit reservation
                 </button>
                 <button type="button" class="btn btn-hover btn-g rounded-pill font-weight-bold" data-dismiss="modal">
                     Close
@@ -270,7 +280,8 @@
             </div>
 
             <div class="modal-footer">
-                <button type="submit" class="btn btn-hover btn-g rounded-pill font-weight-bold">Submit reservation
+                <button type="submit" class="btn btn-hover btn-g rounded-pill font-weight-bold" title="Submit"
+                        data-toggle="modal" data-target="#myModalSu" data-dismiss="modal">Submit reservation
                 </button>
                 <button type="button" class="btn btn-hover btn-g rounded-pill font-weight-bold" data-dismiss="modal">
                     Close
@@ -325,7 +336,8 @@
             </div>
 
             <div class="modal-footer">
-                <button type="submit" class="btn btn-hover btn-g rounded-pill font-weight-bold">Submit reservation
+                <button type="submit" class="btn btn-hover btn-g rounded-pill font-weight-bold" title="Submit"
+                        data-toggle="modal" data-target="#myModalSu" data-dismiss="modal">Submit reservation
                 </button>
                 <button type="button" class="btn btn-hover btn-g rounded-pill font-weight-bold" data-dismiss="modal">
                     Close
@@ -335,11 +347,67 @@
     </div>
 </div>
 
-<footer class="container mb-3">
+<div class="modal" tabindex="-1" role="dialog" id="myModalSu">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content achtergrond">
+            <div class="modal-header">
+                <h4 class="modal-title">Thank you for your reservation</h4>
+                <p></p>
+                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
 
+
+                <button type="button" class="btn btn-hover btn-g rounded-pill font-weight-bold p-2 m-2" data-dismiss="modal">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="container-fluid py-3">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12 col-md-3 col-lg-3 align-self-center">
+                <div class="text-center">
+                    Hilltop B&B
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="text-center">
+                    <p> Rue Laloy Chenet 4 08250 Chatel Chéhéry </p>
+                    <p> Tel: +33 2 31 81 63 20<br>
+                        Mail: contact@hilltop.com
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3  align-self-center">
+                <div class="text-center">
+                    <img src="images/icons/facebook.png" alt="facebook" width="32" height="32">
+                    <img src="images/icons/instagram.png" alt="instagram" width="32" height="32">
+                    <img src="images/icons/tripadvisor.png" alt="trip advisor" width="32" height="32">
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="text-center">
+                    <p>&#169; 2021 Hilltop B&B. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script src="./js/parallax.js"></script>
+
 </body>
 </html>
