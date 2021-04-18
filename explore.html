@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Hilltop B&B</title>
+    <title>explore / Hilltop B&B</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
@@ -12,11 +12,6 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        body {
-            max-width: 100%;
-            overflow-x: hidden;
-        }
-
         .btn-g {
             color: #e3dcd2;
             background-color: #013328;
@@ -30,8 +25,8 @@
         }
 
         .wrapper {
-            height: 100vh;
-            width: 100vw;
+            height:100vh;
+            width: 100%;
             background-position: center;
             background-attachment: fixed;
             margin: 0;
@@ -40,21 +35,78 @@
 
         .bg-explore{
             background-image: url(images/dear.jpeg);
+            background-repeat: none  ;
         }
         
         .img-explore{
             width: 100%;
             height:400px;
             object-position:0 80%;
-            object-fit: cover;         
+            object-fit: cover;
+            box-shadow: 15px 15px 0px 0 #CC8B65;         
         }
+        .img-explore2{
+            width: 100%;
+            height:400px;
+            object-position:0 80%;
+            object-fit: cover;
+            box-shadow: -15px -15px 0px 0 #CC8B65;         
+        }
+
+        @media screen and (max-width: 768px) {
+            .img-explore,.img-explore2 {
+                width: 100%;
+                box-shadow:none;
+                }
+            }
+
         .bg-green{
             background-color: #013328;
-            color:white;
         }
-    
-    </style>
 
+        .activity,.activity a{
+            color: #CC8B65;
+        }
+        
+        .bg-activity{
+            background-color: #CC8B65;   
+        }
+        .btn-explore { 
+            border-color: #CC8B65; 
+            background-color: #CC8B65; 
+            color:#FFF;
+            }
+
+        .btn-explore:hover, .btn-explore:active,.btn-explore:visited { 
+            border-color: #815841; 
+            background-color: #815841;
+            }
+
+        .btn-explore a { 
+            color:#FFF;
+            } 
+
+        .btn-explore a:link { 
+            text-decoration: none; 
+            } 
+
+        .img-sight {
+            width: 300px;
+            height:250px;
+            object-position:50% 90%;
+            object-fit: cover;     
+        }
+
+        @media screen and (max-width: 768px) {
+        .img-sight {
+            width: 100%;
+            height: 70vh;
+                }
+            }
+
+        
+    </style>
+<link href="lightbox2-2.11.3/src/css/lightbox.css" rel="stylesheet" />
 </head>
 <body>
  <!--contents starts-->
@@ -63,26 +115,26 @@
     <div class="wrapper bg-explore">
         <header>
             <!--Nav menu-->
-            <nav class="navbar navbar-expand-lg static-top  navbar-dark">
+            <nav class="navbar navbar-expand-lg static-top navbar-dark">
                 <div class="container">
                     <a class="navbar-brand fs-6" href="#">
                         Hilltop B&B
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" 
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html" title="Homepage">Home
-                                    <span class="sr-only">(current)</span>
-                                </a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html" title="Homepage">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="service.html" title="Services">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="explore.html" title="Explore">Explore</a>
+                                <a class="nav-link active" href="explore.html" title="Explore">Explore</a>
+                                <span class="sr-only">(current)</span>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html" title="Contact">Contact</a>
@@ -92,79 +144,132 @@
                 </div>
             </nav>
         </header>
-
         <!--Hero image-->
         <div class="row h-100 w-auto mx-auto align-content-center">
-            <h1 class="h1 mx-auto text-white">Explore<br class="d-lg-none"> the neighbourhood</h1>
+            <h1 class="h1 mx-auto text-white text-center display-4">Explore the neighbourhood</h1>
         </div>
-
     </div>
     <!--Nav & Hero image div finish-->
 
-    <!--Activity in nature-->
-    <div class="container-fluid p-5">
-        <h2 class="text-center">Activities in nature</h2>
-        <!--Hike-->
-        <div class="row align-items-center p-lg-5 p-md-5 pt-sm-3">
-            <div class=" col-md-6 col-sm-12">
-                <h3>
-                    Hike
-                </h3>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
+    <!--Outdoor Activities-->  
+    <div class="container-fluid text-white text-center pt-5 pb-4 bg-activity">           
+        <h2>Outdoor Activities</h2>
+        <p>Spending time outside is a fun option</p>
+    </div>
+    <div class="container-fluid p-5">    
+        <!--Hiking-->
+        <div class="row align-items-center p-lg-3">
             <div class="col-md-6 col-sm-12">
+                <h3 class="activity pb-2">
+                    Hiking
+                </h3>
+                <p class="pb-2">
+                    If you’re an adventurer who loves being out in nature, 
+                    a hiking tour should be on your list. 
+                    You can expect great wildlife photography opportunities in 
+                    <em class="activity"><a href="https://www.tripadvisor.com/Attraction_Review-g2228081-d4759783-Reviews-Butte_de_Vauquois-Vauquois_Meuse_Grand_Est.html" target="_blank" alt="Butte de vauqois">
+                    Butte de vauqois</a></em>.
+                    In addition, hiking will give you the opportunity to clear your mind 
+                    and escape regular activities that fill your day.                   
+                </p>
+                <button type="button" class="btn btn-explore">
+                    <a href="https://www.tripadvisor.com/Attraction_Review-g2228081-d4759783-Reviews-Butte_de_Vauquois-Vauquois_Meuse_Grand_Est.html" target="_blank" alt="More Info">
+                    More Info
+                    </a>
+                </button>
+            </div>
+            <div class="col-md-6 col-sm-12 pt-3">
                 <figure class="figure">
                     <img src="images/hike-image-w500.jpg" class="img-explore">
                 </figure>            
             </div>
         </div>
-        <!--Bike-->
-        <div class="row align-items-center p-lg-5 p-md-5 p-sm-3 flex-wrap-reverse">
-            <div class="col-md-6 col-sm-12">
+        <!--Cycling-->
+        <div class="row align-items-center p-lg-5 flex-wrap-reverse">
+            <div class="col-md-6 col-sm-12 pt-3">
                 <figure class="figure">
-                    <img src="images/bike.jpeg" class="img-explore">
+                    <img src="images/bike.jpeg" class="img-explore2">
                 </figure>            
             </div>
-            <div class=" col-md-6 col-sm-12">
-                <h3>
-                    Bike
+            <div class="col-md-6 col-sm-12">
+                <h3 class="activity pb-2">
+                    Cycling
                 </h3>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum.
+                    Why not cycle around and find some nice, hidden places? 
+                    Maybe something new to you could be hiding out under a big, old tree. 
+                    You could even get off your bike and check out those spots
+                    to see how comfortable they’d be.
                 </p>
+                <button type="button" class="btn btn-explore">
+                    <a href="https://www.tripadvisor.com/Attraction_Review-g2228081-d4759783-Reviews-Butte_de_Vauquois-Vauquois_Meuse_Grand_Est.html" target="_blank" alt="More Info">
+                    More Info
+                </a>
+                </button>   
             </div>
         </div>
     </div>
-    <!--Activity in nature finish-->
+    <!--Outdoor Activities end-->
  
-     <!--Learn the history-->
+    <!--Sightseeing-->
     <div class="container-fluid p-5 bg-green">
-        <h2 class="text-center">Learn the history</h2>
+        <h2 class="text-center text-white">Sightseeing</h2>
+        <p class="text-center text-white">Historical place</p>
+        <!--Montfaucon American Monument-->
+        <div class="row align-items-center mx-auto">
+            <div class="col-lg-7 col-sm-12 pt-5 d-flex flex-wrap">
+                <a href="images/montfaucon1.jpeg" data-lightbox="montfaucon image 1"><img src="images/montfaucon1.jpeg"  class="img-sight p-1"></a>
+                <a href="images/montfaucon2.jpeg" data-lightbox="montfaucon image 2"><img src="images/montfaucon2.jpeg"  class="img-sight p-1"></a>           
+            </div>
+            <div class="col-lg-5 col-sm-12 text-white">
+                <h3 class="py-3">
+                    Montfaucon American Monument
+                </h3>
+                <p>
+                    The World War I Montfaucon American Monument is located seven miles south 
+                    of the Meuse-Argonne American Cemetery and Memorial and 20 miles northwest 
+                    of Verdun, France.
+                </p>
+                <button type="button" class="btn btn-explore">
+                    <a href="https://www.abmc.gov/Montfaucon" target="_blank" alt="More Info">
+                    More Info
+                    </a>
+                </button>
+            </div>
+            <!--Romagne-sous-Montfaucon-->
+            <div class="row align-items-center mx-auto pt-3">
+                <div class="col-lg-7 col-sm-12 pt-5 d-flex flex-wrap">
+                    <a href="images/montfaucon1.jpeg" data-lightbox="montfaucon image 1"><img src="images/montfaucon1.jpeg"  class="img-sight p-1"></a>
+                    <a href="images/montfaucon2.jpeg" data-lightbox="montfaucon image 2"><img src="images/montfaucon2.jpeg"  class="img-sight p-1"></a>           
+                </div>
+                <div class="col-lg-5 col-sm-12 text-white">
+                    <h3 class="py-3">
+                        Montfaucon American Monument
+                    </h3>
+                    <p>
+                        The World War I Montfaucon American Monument is located seven miles south 
+                        of the Meuse-Argonne American Cemetery and Memorial and 20 miles northwest 
+                        of Verdun, France.
+                    </p>
+                    <button type="button" class="btn btn-explore">
+                        <a href="https://www.abmc.gov/Montfaucon" target="_blank" alt="More Info">
+                        More Info
+                        </a>
+                    </button>
+                </div>
+        </div>
+
+ 
+
     </div>
-    
-
-
-
-
-
-
-    </div>
-
-    <footer class="container mb-3">
+    <!--Sightseeing end-->
+    <div class="row h-100 w-auto mx-auto align-content-center">
         
-    </footer>
+    </div>
+
+<footer class="container mb-3">
+        
+</footer>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -173,5 +278,6 @@
 
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script src="lightbox2-2.11.3/src/js/lightbox.js"></script>
 </body>
 </html>
