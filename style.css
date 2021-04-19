@@ -127,7 +127,7 @@ footer {
 /*//////// for explore page ////////*/
 .bg-explore{
     background-image: url(images/dear.jpeg);
-    background-repeat: none  ;
+    background-repeat: none;
     background-position: center;
     background-attachment: fixed;
 }
