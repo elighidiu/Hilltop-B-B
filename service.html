@@ -31,7 +31,7 @@
             cursor: pointer;
         }
         .card-hover2:hover{
-            background-color: #e0e0e0;
+            background-color: #fdfdfd;
             -webkit-transition: all 0.4s;
             -moz-transition: all 0.4s;
             transition: all 0.4s;
@@ -45,21 +45,10 @@
             background-color: #e3dcd2;
         }
 
-        body {
-            max-width: 100%;
-            overflow-x: hidden;
-        }
-
 
         .wrapper {
             height: 100vh;
-            width: 100vw;
-            background-position: center;
-            background-attachment: fixed;
-            margin: 0;
-            z-index: 0;
-            background-repeat: no-repeat;
-            background-size: cover;
+            width: 100%;
         }
 
         .marge {
@@ -71,11 +60,15 @@
             margin-right: 20%;
         }
 
+
         .achtergrondwit {
             background-color: #e0e0e0;
 
         }
+        .backgroundcolorgreen {
+            background-color: #013328;
 
+        }
 
     </style>
 
@@ -84,7 +77,7 @@
 <body>
 
 
-<div class="wrapper   parallax-window mb-5 " data-parallax="scroll" data-speed="0.5" data-bleed="10"
+<div class="wrapper   parallax-window  overflow-hidden" data-parallax="scroll" data-speed="0.5" data-bleed="10"
      data-image-src="images/DSC_5636-300x202.png">
     <header>
         <nav class="navbar navbar-expand-lg static-top  navbar-dark">
@@ -121,8 +114,8 @@
     </div>
 
 </div>
-
-<div class="container-fluid text-center  marge py-5">
+<div class="container-fluid backgroundcolorgreen text-white">
+<div class="container-fluid text-center  marge py-5 ">
     <h1>Special Services</h1>
     <p class="my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -132,14 +125,15 @@
 
 
 </div>
-<hr class="marge">
+</div>
+<!--<hr class="marge">-->
 
 <div class="container-fluid text-center mt-5 py-5">
     <h1>Tariffs</h1>
     <div class="row  justify-content-around marge2">
 
         <div class="col-sm-12 col-md-12 col-lg-4 ">
-            <div class="rounded p-3 my-3 shadow-lg achtergrond card-hover2" data-toggle="modal" data-target="#myModalS">
+            <div class="rounded p-3 my-3 shadow-lg achtergrondwit card-hover2" data-toggle="modal" data-target="#myModalS">
 
                 <h2 class="mt-3">Standard Option</h2>
                 <h3>€50/day</h3>
@@ -156,7 +150,7 @@
             </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4">
-            <div class="rounded p-3 my-3 shadow-lg achtergrond card-hover2">
+            <div class="rounded p-3 my-3 shadow-lg achtergrondwit card-hover2" data-toggle="modal" data-target="#myModalD">
 
                 <h2 class="mt-3">Deluxe Option</h2>
                 <h3>€60/day</h3>
@@ -173,7 +167,7 @@
             </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4">
-            <div class="rounded p-3 my-3 shadow-lg achtergrond card-hover2">
+            <div class="rounded p-3 my-3 shadow-lg achtergrondwit card-hover2" data-toggle="modal" data-target="#myModalP">
 
                 <h2 class="mt-3">Premium Option</h2>
                 <h3>€70/day</h3>

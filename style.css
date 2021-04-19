@@ -61,3 +61,65 @@ footer {
     text-decoration: none; 
     }
 /*//// button style for all end////*/
+
+.btn-g {
+    color: #e3dcd2;
+    background-color: #013328;
+    border-color: #013328;
+    cursor: pointer;
+}
+
+.btn-hover:hover {
+    color: #100c0d;
+    text-decoration: none;
+    background-color: #e3dcd2;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.card-hover:hover{
+    background-color: #e3dcd2;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.card-hover2:hover{
+    background-color: #fdfdfd;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.tekstgrote {
+    font-size: 18px;
+}
+
+.achtergrond {
+    background-color: #e3dcd2;
+}
+
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+.marge {
+    width: 60%;
+}
+
+.marge2 {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+.achtergrondwit {
+    background-color: #e0e0e0;
+
+}
+.backgroundcolorgreen {
+    background-color: #013328;
+
+}
