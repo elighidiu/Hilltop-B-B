@@ -7,107 +7,25 @@
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 
     <!-- Bootstrap CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet"><link>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!--lightbox css-->
+    <link href="lightbox2-2.11.3/src/css/lightbox.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .btn-g {
-            color: #e3dcd2;
-            background-color: #013328;
-            border-color: #013328;
-        }
-        .btn-hover:hover {
-            color: #100c0d;
-            text-decoration: none;
-            background-color: #e3dcd2;
-            font-size: larger;
-        }
-
-        .wrapper {
+         .wrapper {
             height:100vh;
             width: 100%;
             background-position: center;
             background-attachment: fixed;
             margin: 0;
             z-index: 0;
-        } 
-
-        .bg-explore{
-            background-image: url(images/dear.jpeg);
-            background-repeat: none  ;
-        }
-        
-        .img-explore{
-            width: 100%;
-            height:400px;
-            object-position:0 80%;
-            object-fit: cover;
-            box-shadow: 15px 15px 0px 0 #CC8B65;         
-        }
-        .img-explore2{
-            width: 100%;
-            height:400px;
-            object-position:0 80%;
-            object-fit: cover;
-            box-shadow: -15px -15px 0px 0 #CC8B65;         
-        }
-
-        @media screen and (max-width: 768px) {
-            .img-explore,.img-explore2 {
-                width: 100%;
-                box-shadow:none;
-                }
-            }
-
-        .bg-green{
-            background-color: #013328;
-        }
-
-        .activity,.activity a{
-            color: #CC8B65;
-        }
-        
-        .bg-activity{
-            background-color: #CC8B65;   
-        }
-        .btn-explore { 
-            border-color: #CC8B65; 
-            background-color: #CC8B65; 
-            color:#FFF;
-            }
-
-        .btn-explore:hover, .btn-explore:active,.btn-explore:visited { 
-            border-color: #815841; 
-            background-color: #815841;
-            }
-
-        .btn-explore a { 
-            color:#FFF;
-            } 
-
-        .btn-explore a:link { 
-            text-decoration: none; 
-            } 
-
-        .img-sight {
-            width: 300px;
-            height:250px;
-            object-position:50% 90%;
-            object-fit: cover;     
-        }
-
-        @media screen and (max-width: 768px) {
-        .img-sight {
-            width: 100%;
-            height: 70vh;
-                }
-            }
-
-        
+        }       
     </style>
-<link href="lightbox2-2.11.3/src/css/lightbox.css" rel="stylesheet" />
+
 </head>
+
 <body>
  <!--contents starts-->
     
@@ -152,7 +70,7 @@
     <!--Nav & Hero image div finish-->
 
     <!--Outdoor Activities-->  
-    <div class="container-fluid text-white text-center pt-5 pb-4 bg-activity">           
+    <div class="container-fluid text-center pt-5 pb-4 bg-activity">           
         <h2>Outdoor Activities</h2>
         <p>Spending time outside is a fun option</p>
     </div>
@@ -172,7 +90,7 @@
                     In addition, hiking will give you the opportunity to clear your mind 
                     and escape regular activities that fill your day.                   
                 </p>
-                <button type="button" class="btn btn-explore">
+                <button type="button" class="btn btn-all">
                     <a href="https://www.tripadvisor.com/Attraction_Review-g2228081-d4759783-Reviews-Butte_de_Vauquois-Vauquois_Meuse_Grand_Est.html" target="_blank" alt="More Info">
                     More Info
                     </a>
@@ -201,7 +119,7 @@
                     You could even get off your bike and check out those spots
                     to see how comfortable they’d be.
                 </p>
-                <button type="button" class="btn btn-explore">
+                <button type="button" class="btn btn-all">
                     <a href="https://www.tripadvisor.com/Attraction_Review-g2228081-d4759783-Reviews-Butte_de_Vauquois-Vauquois_Meuse_Grand_Est.html" target="_blank" alt="More Info">
                     More Info
                 </a>
@@ -218,10 +136,10 @@
         <!--Montfaucon American Monument-->
         <div class="row align-items-center mx-auto">
             <div class="col-lg-7 col-sm-12 pt-5 d-flex flex-wrap">
-                <a href="images/montfaucon1.jpeg" data-lightbox="montfaucon image 1"><img src="images/montfaucon1.jpeg"  class="img-sight p-1"></a>
-                <a href="images/montfaucon2.jpeg" data-lightbox="montfaucon image 2"><img src="images/montfaucon2.jpeg"  class="img-sight p-1"></a>           
+                <a href="images/montfaucon1.jpeg" data-lightbox="montfaucon"><img src="images/montfaucon1.jpeg"  class="img-sight p-1"></a>
+                <a href="images/montfaucon2.jpeg" data-lightbox="montfaucon"><img src="images/montfaucon2.jpeg"  class="img-sight p-1"></a>           
             </div>
-            <div class="col-lg-5 col-sm-12 text-white">
+            <div class="col-lg-5 col-sm-12">
                 <h3 class="py-3">
                     Montfaucon American Monument
                 </h3>
@@ -230,52 +148,81 @@
                     of the Meuse-Argonne American Cemetery and Memorial and 20 miles northwest 
                     of Verdun, France.
                 </p>
-                <button type="button" class="btn btn-explore">
+                <button type="button" class="btn btn-all">
                     <a href="https://www.abmc.gov/Montfaucon" target="_blank" alt="More Info">
                     More Info
                     </a>
                 </button>
             </div>
-            <!--Romagne-sous-Montfaucon-->
-            <div class="row align-items-center mx-auto pt-3">
-                <div class="col-lg-7 col-sm-12 pt-5 d-flex flex-wrap">
-                    <a href="images/montfaucon1.jpeg" data-lightbox="montfaucon image 1"><img src="images/montfaucon1.jpeg"  class="img-sight p-1"></a>
-                    <a href="images/montfaucon2.jpeg" data-lightbox="montfaucon image 2"><img src="images/montfaucon2.jpeg"  class="img-sight p-1"></a>           
-                </div>
-                <div class="col-lg-5 col-sm-12 text-white">
-                    <h3 class="py-3">
-                        Montfaucon American Monument
-                    </h3>
-                    <p>
-                        The World War I Montfaucon American Monument is located seven miles south 
-                        of the Meuse-Argonne American Cemetery and Memorial and 20 miles northwest 
-                        of Verdun, France.
-                    </p>
-                    <button type="button" class="btn btn-explore">
-                        <a href="https://www.abmc.gov/Montfaucon" target="_blank" alt="More Info">
-                        More Info
-                        </a>
-                    </button>
-                </div>
+        </div>    
+        <!--Meuse Argonne American Cemetery-->
+        <div class="row align-items-center mx-auto">
+            <div class="col-lg-7 col-sm-12 pt-5 d-flex flex-wrap">
+                <a href="images/cemetery1.jpg" data-lightbox="cemetery"><img src="images/cemetery1.jpg"  class="img-sight p-1"></a>
+                <a href="images/cemetery2.jpg" data-lightbox="cemetery"><img src="images/cemetery2.jpg"  class="img-sight p-1"></a>           
+            </div>
+            <div class="col-lg-5 col-sm-12">
+                <h3 class="py-3">
+                    Meuse Argonne American Cemetery
+                </h3>
+                <p>
+                    Within the Meuse-Argonne American Cemetery and Memorial in France, 
+                    which covers 130.5 acres, rest the largest number of our military dead in Europe, 
+                    a total of 14,246. Most of those buried here lost their lives during the Meuse-Argonne 
+                    Offensive of World War I. The immense array of headstones rises in long regular rows 
+                    upward beyond a wide central pool to the chapel that crowns the ridge. 
+                </p>
+                <button type="button" class="btn btn-all">
+                    <a href="https://www.abmc.gov/Meuse-Argonne" target="_blank" alt="More Info">
+                    More Info
+                    </a>
+                </button>
+            </div>
         </div>
-
- 
-
     </div>
     <!--Sightseeing end-->
-    <div class="row h-100 w-auto mx-auto align-content-center">
-        
-    </div>
 
-<footer class="container mb-3">
-        
-</footer>
+   <!--Footer area-->
+   <footer class="container-fluid py-3">
+    <div class="container">
+        <div class="row">
+          
+            <div class="col-sm-12 col-md-3 col-lg-3 align-self-center">
+              <div class="text-center">
+                Hilltop B&B
+              </div>
+              
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+              <div class="text-center">
+               <p> Rue Laloy Chenet 4 08250 Chatel Chéhéry </p>
+               <p> Tel: +33 2 31 81 63 20</br>
+                  Mail: contact@hilltop.com
+                </p>
+              </div>
+  
+            </div>
+            <div class="col-sm-12 col-md-3 col-lg-3  align-self-center">
+              <div class="text-center">
+                <img src="images/icons/facebook.png" alt="facebook" width="32" height="32">
+                <img src="images/icons/instagram.png" alt="instagram" width="32" height="32">
+                <img src="images/icons/tripadvisor.png" alt="trip advisor" width="32" height="32">
+                </div>
+  
+            </div>
+        </div>
+        <hr class="hrfooter">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="text-center">
+            <p>&#169; 2021 Hilltop B&B. All rights reserved</p>
+          </div>
+          </div>
+        </div>
+    </div>  
+  </footer>
 
 <!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="lightbox2-2.11.3/src/js/lightbox.js"></script>
