@@ -28,3 +28,24 @@ body{
     background-color: #CC8B65;
     border-color: #CC8B65;
 }
+
+/* /////  button for all pages  /////*/
+.btn-all { 
+    border-color: #CC8B65; 
+    background-color: #CC8B65; 
+    color:#f8f8f8;
+    }
+
+.btn-all:hover, .btn-all:active,.btn-all:visited { 
+    border-color: #815841; 
+    background-color: #815841;
+    }
+
+.btn-all a { 
+    color:#f8f8f8;
+    } 
+
+.btn-all a:link { 
+    text-decoration: none; 
+    }
+/* /////  button for all pages end /////*/
