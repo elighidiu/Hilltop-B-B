@@ -5,11 +5,12 @@ body{
     color:#100c0d;
 }
 
-/** navigation menu & carousel filters*/
+/* navigation menu*/
 
 .nav-link {
     font-size: 1.2rem;
     margin-left: 20px;
+    color:#e3dcd2;
 }
 
 .navbar {
@@ -18,18 +19,77 @@ body{
     opacity: 0.7;
     z-index: 9999;
 }
+/*carousel*/
 
 #imgFilter {
         filter:sepia(50%);
         filter: brightness(50%);
 }
 
-.btn-primary {
+.headerbtn {
     background-color: #CC8B65;
     border-color: #CC8B65;
 }
 
-/* /////  button for all pages  /////*/
+.headerbtn:hover {
+    background-color:#CC8B65;
+    border-color: #CC8B65;
+}
+
+.negmar {
+    margin-bottom: -5em;
+  }
+  
+/*footer*/
+
+footer {
+    background-color: #100c0d;
+    color:#e3dcd2;
+  }
+
+.hrfooter {
+    border: 1px solid #e3dcd2 ;
+  }
+
+/*Custom button content area homepage*/
+.homebtn {
+
+    border-color: #cc8b65;
+    color: #212529;
+}
+
+.homebtn:hover {
+    border-color: #cc8b65;
+    background-color:#cc8b65;
+}
+
+.homebtn.focus,
+.homebtn:focus {
+    box-shadow: 0 0 0 .2rem #489f8c;
+}
+
+.homebtn.disabled,
+.homebtn:disabled {
+    color: #212529;
+    background-color: #cc8b65;
+    border-color: #cc8b65;
+}
+.homebtn:not(:disabled):not(.disabled):active,
+.homebtn:not(:disabled):not(.disabled).active,
+.show>.homebtn.dropdown-toggle {
+    color: #212529;
+    background-color: #cc8b65;
+    border-color: #cc8b65;
+}
+
+.homebtn:not(:disabled):not(.disabled):active:focus,
+.homebtn:not(:disabled):not(.disabled).active:focus,
+.show>.homebtn.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem #489f8c;
+}
+
+
+/*//// button style for all ////*/
 .btn-all { 
     border-color: #CC8B65; 
     background-color: #CC8B65; 
@@ -48,4 +108,4 @@ body{
 .btn-all a:link { 
     text-decoration: none; 
     }
-/* /////  button for all pages end /////*/
+/*//// button style for all end////*/
