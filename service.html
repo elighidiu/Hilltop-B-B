@@ -4,71 +4,15 @@
     <title>Services</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta name="Services" content="We provide multiple services">
+    <meta name="Reservation" content="Make a reservation with the right options">
+    <meta name="Book a room" content="You can book a room for however long you want to">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/ico" href="images/icons/favicon.ico">
     <style>
-        .btn-g {
-            color: #e3dcd2;
-            background-color: #013328;
-            border-color: #013328;
-            cursor: pointer;
-        }
 
-        .btn-hover:hover {
-            color: #100c0d;
-            text-decoration: none;
-            background-color: #e3dcd2;
-            -webkit-transition: all 0.4s;
-            -moz-transition: all 0.4s;
-            transition: all 0.4s;
-        }
-        .card-hover:hover{
-            background-color: #e3dcd2;
-            -webkit-transition: all 0.4s;
-            -moz-transition: all 0.4s;
-            transition: all 0.4s;
-            cursor: pointer;
-        }
-        .card-hover2:hover{
-            background-color: #fdfdfd;
-            -webkit-transition: all 0.4s;
-            -moz-transition: all 0.4s;
-            transition: all 0.4s;
-            cursor: pointer;
-        }
-        .tekstgrote {
-            font-size: 18px;
-        }
-
-        .achtergrond {
-            background-color: #e3dcd2;
-        }
-
-
-        .wrapper {
-            height: 100vh;
-            width: 100%;
-        }
-
-        .marge {
-            width: 60%;
-        }
-
-        .marge2 {
-            margin-left: 20%;
-            margin-right: 20%;
-        }
-
-
-        .achtergrondwit {
-            background-color: #e0e0e0;
-
-        }
-        .backgroundcolorgreen {
-            background-color: #013328;
-
-        }
 
     </style>
 
@@ -76,13 +20,13 @@
 </head>
 <body>
 
-
+<!--parallax + nav-->
 <div class="wrapper   parallax-window  overflow-hidden" data-parallax="scroll" data-speed="0.5" data-bleed="10"
      data-image-src="images/DSC_5636-300x202.png">
     <header>
         <nav class="navbar navbar-expand-lg static-top  navbar-dark">
             <div class="container">
-                <a class="navbar-brand fs-6" href="#">
+                <a class="navbar-brand fs-6" href="index.html">
                     Hilltop B&B
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -114,26 +58,29 @@
     </div>
 
 </div>
+
 <div class="container-fluid backgroundcolorgreen text-white">
 <div class="container-fluid text-center  marge py-5 ">
     <h1>Special Services</h1>
-    <p class="my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
+    <p class="my-5">Hilltop is easily accessible for people in wheelchairs. First and foremost, you will find a ramp at the entrance of the property.
+        Also, to reach the second floor you might use the lift to get there.
+        But all necessary facilities are placed downstairs such as the bedroom, bathroom, and the kitchen.
+        The wide corridors and doorways will make it easy to maneuver through the house with a wheelchair.
+        In the bathrooms you will find Handrails on the walls and a roll-in shower.
+        <br>
+        If there are any food request (vegan, allergies, halal,...) please let us know beforehand so we can take this into account.</p>
 
 
 </div>
 </div>
-<!--<hr class="marge">-->
 
-<div class="container-fluid text-center mt-5 py-5">
+<!--container + cards -->
+<div class="container text-center w-100 mt-5 py-5">
     <h1>Tariffs</h1>
-    <div class="row  justify-content-around marge2">
+    <div class="row  justify-content-around  h-100">
 
         <div class="col-sm-12 col-md-12 col-lg-4 ">
-            <div class="rounded p-3 my-3 shadow-lg achtergrondwit card-hover2" data-toggle="modal" data-target="#myModalS">
+            <div class="rounded p-1 my-3 shadow-lg achtergrondwit card-hover2 "> <!--data-toggle="modal" data-target="#myModalS"-->
 
                 <h2 class="mt-3">Standard Option</h2>
                 <h3>€50/day</h3>
@@ -144,13 +91,13 @@
                     -2 twin beds<br>
                     -Breakfast
                 </p>
-                <button class="btn btn-hover btn-g rounded-pill font-weight-bold " title="learn more"
+                <button class="btn btn-hover btn-g rounded-pill font-weight-bold mb-3" title="learn more"
                         data-toggle="modal" data-target="#myModalS">RESERVE
                 </button>
             </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4">
-            <div class="rounded p-3 my-3 shadow-lg achtergrondwit card-hover2" data-toggle="modal" data-target="#myModalD">
+            <div class="rounded p-1 my-3 shadow-lg achtergrondwit card-hover2" >
 
                 <h2 class="mt-3">Deluxe Option</h2>
                 <h3>€60/day</h3>
@@ -161,13 +108,13 @@
                     -1 queensize bed<br>
                     -breakfast, lunch
                 </p>
-                <button class="btn btn-hover btn-g rounded-pill font-weight-bold " title="learn more"
+                <button class="btn btn-hover btn-g rounded-pill font-weight-bold mb-3" title="learn more"
                         data-toggle="modal" data-target="#myModalD">RESERVE
                 </button>
             </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4">
-            <div class="rounded p-3 my-3 shadow-lg achtergrondwit card-hover2" data-toggle="modal" data-target="#myModalP">
+            <div class="rounded p-1 my-3 shadow-lg achtergrondwit card-hover2" >
 
                 <h2 class="mt-3">Premium Option</h2>
                 <h3>€70/day</h3>
@@ -177,7 +124,7 @@
                     -Toiletries<br>
                     -1 kingsize bed<br>
                     -breakfast, lunch, diner</p>
-                <button class="btn btn-hover btn-g rounded-pill font-weight-bold " title="learn more"
+                <button class="btn btn-hover btn-g rounded-pill font-weight-bold mb-3" title="learn more"
                         data-toggle="modal" data-target="#myModalP">RESERVE
                 </button>
             </div>
@@ -187,6 +134,7 @@
 </div>
 
 
+<!--modals for the form and buttons -->
 <div class="modal" tabindex="-1" role="dialog" id="myModalS">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content achtergrond">
@@ -242,7 +190,6 @@
         </div>
     </div>
 </div>
-
 <div class="modal" tabindex="-1" role="dialog" id="myModalD">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content achtergrond">
@@ -263,23 +210,23 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Name</label>
-                        <input type="name" class="form-control" id="inputName1" aria-describedby="nameHelp"
+                        <input type="name" class="form-control" id="inputName2" aria-describedby="nameHelp"
                                placeholder="Enter name">
 
                         <label for="exampleInputEmail1">Country</label>
-                        <input type="country" class="form-control" id="exampleInputCountry"
+                        <input type="country" class="form-control" id="exampleInputCountry2"
                                aria-describedby="countryHelp" placeholder="Enter country">
 
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp"
                                placeholder="Enter email">
 
                         <label for="exampleInputEmail1">Begin-date</label>
-                        <input type="date" class="form-control" id="example-date-input1" aria-describedby="emailHelp"
+                        <input type="date" class="form-control" id="example-date-input3" aria-describedby="emailHelp"
                                placeholder="Enter email">
 
                         <label for="exampleInputEmail1">End-date</label>
-                        <input type="date" class="form-control" id="example-date-input2" aria-describedby="emailHelp"
+                        <input type="date" class="form-control" id="example-date-input4" aria-describedby="emailHelp"
                                placeholder="Enter email">
 
                     </div>
@@ -298,7 +245,6 @@
         </div>
     </div>
 </div>
-
 <div class="modal" tabindex="-1" role="dialog" id="myModalP">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content achtergrond">
@@ -319,23 +265,23 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Name</label>
-                        <input type="name" class="form-control" id="inputName1" aria-describedby="nameHelp"
+                        <input type="name" class="form-control" id="inputName3" aria-describedby="nameHelp"
                                placeholder="Enter name">
 
                         <label for="exampleInputEmail1">Country</label>
-                        <input type="country" class="form-control" id="exampleInputCountry"
+                        <input type="country" class="form-control" id="exampleInputCountr3"
                                aria-describedby="countryHelp" placeholder="Enter country">
 
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <input type="email" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp"
                                placeholder="Enter email">
 
                         <label for="exampleInputEmail1">Begin-date</label>
-                        <input type="date" class="form-control" id="example-date-input1" aria-describedby="emailHelp"
+                        <input type="date" class="form-control" id="example-date-input6" aria-describedby="emailHelp"
                                placeholder="Enter email">
 
                         <label for="exampleInputEmail1">End-date</label>
-                        <input type="date" class="form-control" id="example-date-input2" aria-describedby="emailHelp"
+                        <input type="date" class="form-control" id="example-date-input5" aria-describedby="emailHelp"
                                placeholder="Enter email">
 
                     </div>
@@ -354,7 +300,6 @@
         </div>
     </div>
 </div>
-
 <div class="modal" tabindex="-1" role="dialog" id="myModalSu">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content achtergrond">
@@ -373,7 +318,8 @@
             </div>
         </div>
     </div>
-</div>
+
+<!--footer -->
 <footer class="container-fluid py-3 ">
     <div class="container">
         <div class="row">
@@ -413,6 +359,8 @@
     </div>
 </footer>
 
+
+<!--scripts -->
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/parallax.js"></script>

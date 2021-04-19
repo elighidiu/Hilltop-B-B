@@ -16,12 +16,13 @@ body{
 .navbar {
     position: relative;
     background-color: #100c0d;
+   /* background: rgba(16, 12, 13, 0.6); */ 
     opacity: 0.7;
     z-index: 9999;
 }
 /*carousel*/
 
-#imgFilter {
+.imgFilter {
         filter:sepia(50%);
         filter: brightness(50%);
 }
@@ -40,6 +41,34 @@ footer {
 .hrfooter {
     border: 1px solid #e3dcd2 ;
   }
+
+.f-link {
+      text-decoration:none;
+      color: #e3dcd2;
+  }
+.f-link:hover, .f-link:active, .f-link:visited { 
+    color: #815841;
+    text-decoration:none;
+    }
+
+ /* ///// HOMEPAGE elements/////*/
+.img-shomerb {
+    box-shadow: 15px 15px 0px 0px #cc8b65;
+}
+.img-shomelt {
+    box-shadow: -15px -15px 0px 0px #cc8b65;
+}
+
+.green-cont {
+    background-color:#013328;
+}
+
+.light-text {
+    color:#e3dcd2;
+}
+.light-bg {
+    background-color:#e3dcd2;
+}
 
 /*//// button style for all ////*/
 .btn-all { 
@@ -82,14 +111,13 @@ footer {
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
-    cursor: pointer;
 }
 .card-hover2:hover{
     background-color: #fdfdfd;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
-    cursor: pointer;
+ 
 }
 .tekstgrote {
     font-size: 18px;
@@ -127,7 +155,9 @@ footer {
 /*//////// for explore page ////////*/
 .bg-explore{
     background-image: url(images/dear.jpeg);
-    background-repeat: none  ;
+    background-repeat: none;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .img-explore{
