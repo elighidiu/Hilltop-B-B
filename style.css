@@ -26,16 +26,6 @@ body{
         filter: brightness(50%);
 }
 
-.headerbtn {
-    background-color: #CC8B65;
-    border-color: #CC8B65;
-}
-
-.headerbtn:hover {
-    background-color:#CC8B65;
-    border-color: #CC8B65;
-}
-
 .negmar {
     margin-bottom: -5em;
   }
@@ -50,44 +40,6 @@ footer {
 .hrfooter {
     border: 1px solid #e3dcd2 ;
   }
-
-/*Custom button content area homepage*/
-.homebtn {
-
-    border-color: #cc8b65;
-    color: #212529;
-}
-
-.homebtn:hover {
-    border-color: #cc8b65;
-    background-color:#cc8b65;
-}
-
-.homebtn.focus,
-.homebtn:focus {
-    box-shadow: 0 0 0 .2rem #489f8c;
-}
-
-.homebtn.disabled,
-.homebtn:disabled {
-    color: #212529;
-    background-color: #cc8b65;
-    border-color: #cc8b65;
-}
-.homebtn:not(:disabled):not(.disabled):active,
-.homebtn:not(:disabled):not(.disabled).active,
-.show>.homebtn.dropdown-toggle {
-    color: #212529;
-    background-color: #cc8b65;
-    border-color: #cc8b65;
-}
-
-.homebtn:not(:disabled):not(.disabled):active:focus,
-.homebtn:not(:disabled):not(.disabled).active:focus,
-.show>.homebtn.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .2rem #489f8c;
-}
-
 
 /*//// button style for all ////*/
 .btn-all { 
