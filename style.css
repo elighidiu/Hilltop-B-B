@@ -60,86 +60,7 @@ footer {
 .btn-all a:link { 
     text-decoration: none; 
     }
-<<<<<<< HEAD
 /*//// button style for all end ////*/
-
-
-/*//////// for explore page ////////*/
-.bg-explore{
-    background-image: url(images/dear.jpeg);
-    background-repeat: none  ;
-}
-
-.img-explore{
-    width: 100%;
-    height:400px;
-    object-position:0 80%;
-    object-fit: cover;
-    box-shadow: 15px 15px 0px 0 #CC8B65;         
-}
-.img-explore2{
-    width: 100%;
-    height:400px;
-    object-position:0 80%;
-    object-fit: cover;
-    box-shadow: -15px -15px 0px 0 #CC8B65;         
-}
-
-@media screen and (max-width: 768px) {
-    .img-explore,.img-explore2 {
-        width: 100%;
-        box-shadow:none;
-        }
-    }
-
-.bg-green{
-    background-color: #013328;
-    color: #f8f8f8;
-}
-
-.activity,.activity a{
-    color: #CC8B65;
-}
-
-.bg-activity{
-    background-color: #CC8B65; 
-    color:#f8f8f8;  
-}
-.btn-all { 
-    border-color: #CC8B65; 
-    background-color: #CC8B65; 
-    color:#f8f8f8;
-    }
-
-.btn-all:hover, .btn-all:active,.btn-all:visited { 
-    border-color: #815841; 
-    background-color: #815841;
-    }
-
-.btn-all a { 
-    color:#f8f8f8;
-    } 
-
-.btn-all a:link { 
-    text-decoration: none; 
-    } 
-
-.img-sight {
-    width: 300px;
-    height:250px;
-    object-position:50% 90%;
-    object-fit: cover;     
-}
-
-@media screen and (max-width: 768px) {
-.img-sight {
-    width: 100%;
-    height: 70vh;
-        }
-    }
-/*//////// for explore page end ////////*/
-=======
-/*//// button style for all end////*/
 
 .btn-g {
     color: #e3dcd2;
@@ -202,4 +123,60 @@ footer {
     background-color: #013328;
 
 }
->>>>>>> 1702503b02f45e63ce96cba3d742b43e2b100b15
+
+/*//////// for explore page ////////*/
+.bg-explore{
+    background-image: url(images/dear.jpeg);
+    background-repeat: none  ;
+}
+
+.img-explore{
+    width: 100%;
+    height:400px;
+    object-position:0 80%;
+    object-fit: cover;
+    box-shadow: 15px 15px 0px 0 #CC8B65;         
+}
+.img-explore2{
+    width: 100%;
+    height:400px;
+    object-position:0 80%;
+    object-fit: cover;
+    box-shadow: -15px -15px 0px 0 #CC8B65;         
+}
+
+@media screen and (max-width: 768px) {
+    .img-explore,.img-explore2 {
+        width: 100%;
+        box-shadow:none;
+        }
+    }
+
+.bg-green{
+    background-color: #013328;
+    color: #f8f8f8;
+}
+
+.activity,.activity a{
+    color: #CC8B65;
+}
+
+.bg-activity{
+    background-color: #CC8B65; 
+    color:#f8f8f8;  
+}
+
+.img-sight {
+    width: 300px;
+    height:250px;
+    object-position:50% 90%;
+    object-fit: cover;     
+}
+
+@media screen and (max-width: 768px) {
+.img-sight {
+    width: 100%;
+    height: 70vh;
+        }
+    }
+/*//////// for explore page end ////////*/
