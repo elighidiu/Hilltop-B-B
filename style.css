@@ -70,6 +70,11 @@ footer {
     background-color:#e3dcd2;
 }
 
+/*//// top text on pics /////*/
+.top-text{
+    color:#f8f8f8;  
+}
+
 /*//// button style for all ////*/
 .btn-all { 
     border-color: #CC8B65; 
@@ -182,6 +187,9 @@ footer {
         width: 100%;
         box-shadow:none;
         }
+    .small-pic{
+        display: none;
+    }    
     }
 
 .bg-green{
