@@ -12,15 +12,24 @@
             color: #e3dcd2;
             background-color: #013328;
             border-color: #013328;
+            cursor: pointer;
         }
 
         .btn-hover:hover {
             color: #100c0d;
             text-decoration: none;
             background-color: #e3dcd2;
-
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            transition: all 0.4s;
         }
-
+        .card-hover:hover{
+            background-color: #e3dcd2;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            transition: all 0.4s;
+            cursor: pointer;
+        }
         .tekstgrote {
             font-size: 18px;
         }
@@ -57,11 +66,9 @@
 
         .achtergrondwit {
             background-color: #e0e0e0;
-        }
-        .uitlijnen{
 
-            -webkit-text-stroke:0.1px black;
         }
+
 
     </style>
 
@@ -103,7 +110,7 @@
     </header>
 
     <div class="row h-100 align-content-center ">
-        <h1 class="h1 mx-auto text-white uitlijnen">All our services</h1>
+        <h1 class=" mx-auto text-white  display-4">All our services</h1>
     </div>
 
 </div>
@@ -125,7 +132,7 @@
     <div class="row  justify-content-around marge2">
 
         <div class="col-sm-12 col-md-12 col-lg-4 ">
-            <div class="rounded p-3 my-3 shadow-lg achtergrondwit">
+            <div class="rounded p-3 my-3 shadow-lg achtergrondwit card-hover" data-toggle="modal" data-target="#myModalS">
 
                 <h2 class="mt-3">Standard Option</h2>
                 <h3>€50/day</h3>
