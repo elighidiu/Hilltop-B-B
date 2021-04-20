@@ -98,14 +98,15 @@ margin-bottom: -5em;
 
 /*//// button style for all ////*/
 .btn-all { 
-    border-color: #CC8B65; 
-    background-color: #CC8B65; 
+    border-color: #815841; 
+    background-color: #815841;
     color:#f8f8f8;
     }
 
 .btn-all:hover, .btn-all:active,.btn-all:visited { 
-    border-color: #815841; 
-    background-color: #815841;
+    border-color: #CC8B65; 
+    background-color: #CC8B65; 
+    color:#f8f8f8;
     }
 
 .btn-all a { 
