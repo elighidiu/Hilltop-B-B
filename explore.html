@@ -30,7 +30,7 @@
     <!-- Bootstrap CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <!--lightbox css-->
-    <link href="lightbox2-2.11.3/src/css/lightbox.css" rel="stylesheet" />
+    <link href="js/lightbox2-2.11.3/src/css/lightbox.css" rel="stylesheet" />
     <!-- general CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- favicon -->
@@ -101,18 +101,17 @@
                     In addition, hiking will give you the opportunity to clear your mind 
                     and escape regular activities that fill your day.                   
                 </p>       
-                <button type="button" class="btn btn-all">
-                    <a href="https://www.tripadvisor.com/Attraction_Review-g2228081-d4759783-Reviews-Butte_de_Vauquois-Vauquois_Meuse_Grand_Est.html" target="_blank">
-                    MORE INFO
-                    </a>
-                </button>                
+                <a href="https://www.tripadvisor.com/Attraction_Review-g2228081-d4759783-Reviews-Butte_de_Vauquois-Vauquois_Meuse_Grand_Est.html" target="_blank" class="btn btn-all">
+                MORE INFO
+                </a>              
                 <figure>
                     <img src="images/hiking.png" alt="Hiking image" class="float-right small-pic">
                 </figure>
             </div>
             <div class="col-md-6 col-sm-12 pt-3 pl-lg-5">
                 <figure class="figure">
-                    <img src="images/hike-image-w500.jpg" class="img-explore" alt="Hiking image">
+                    <img src="images/hike-image-w500.jpg" class="img-explore" alt="Hiking image" data-toggle="tooltip" 
+                    data-placement="top" title="Hiking image">
                 </figure>            
             </div>
         </div>
@@ -120,7 +119,8 @@
         <div class="row align-items-center py-3 px-5 flex-wrap-reverse">
             <div class="col-md-6 col-sm-12">
                 <figure class="figure">
-                    <img src="images/bike.jpeg" class="img-explore2" alt="Cycling image">
+                    <img src="images/bike.jpeg" class="img-explore2" alt="Cycling image" data-toggle="tooltip" 
+                    data-placement="top" title="Hiking image">
                 </figure>            
             </div>
             <div class="col-md-6 col-sm-12 pl-lg-5">
@@ -133,13 +133,11 @@
                     You could even get off your bike and check out those spots
                     to see how comfortable they’d be.
                 </p>               
-                <button type="button" class="btn btn-all"> 
-                    <a href="https://www.tripadvisor.com/Attraction_Review-g2228081-d4759783-Reviews-Butte_de_Vauquois-Vauquois_Meuse_Grand_Est.html" target="_blank">
-                    MORE INFO
-                    </a> 
-                </button>   
+                <a href="https://www.tripadvisor.com/Attraction_Review-g2228081-d4759783-Reviews-Butte_de_Vauquois-Vauquois_Meuse_Grand_Est.html" target="_blank" class="btn btn-all">
+                MORE INFO
+                </a> 
                 <figure>
-                    <img src="images/bicycle.png" alt="bike image" class="float-right small-pic">
+                    <img src="images/bicycle.png" alt="bike image" class="float-right small-pic" data-toggle="bike image">
                 </figure>   
             </div>
         </div>
@@ -165,11 +163,9 @@
                     of the Meuse-Argonne American Cemetery and Memorial and 20 miles northwest 
                     of Verdun, France.
                 </p>      
-                <button type="button" class="btn btn-all"></button>
-                    <a href="https://www.abmc.gov/Montfaucon" target="_blank" alt="MORE INFO">
-                        MORE INFO
-                    </a> 
-                </button> 
+                <a href="https://www.abmc.gov/Montfaucon" target="_blank" class="btn btn-all">
+                    MORE INFO
+                </a> 
             </div>
         </div>    
         <!--Meuse Argonne American Cemetery-->
@@ -188,12 +184,10 @@
                     a total of 14,246. Most of those buried here lost their lives during the Meuse-Argonne 
                     Offensive of World War I. The immense array of headstones rises in long regular rows 
                     upward beyond a wide central pool to the chapel that crowns the ridge. 
-                </p>             
-                <button type="button" class="btn btn-all">
-                    <a href="https://www.abmc.gov/Meuse-Argonne" target="_blank">
-                        MORE INFO
-                    </a>
-                </button>              
+                </p>                            
+                <a href="https://www.abmc.gov/Meuse-Argonne" target="_blank" class="btn btn-all">
+                    MORE INFO
+                </a>                          
             </div>
         </div>
     </div>
@@ -245,6 +239,6 @@
 <!-- Optional JavaScript -->
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
-<script src="lightbox2-2.11.3/src/js/lightbox.js"></script>
+<script src="js/lightbox2-2.11.3/src/js/lightbox.js"></script>
 </body>
 </html>
