@@ -1,12 +1,31 @@
 <!doctype html>
 <html lang="en">
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111111111-1">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111111111-1');
+    </script>
+
+   <!-- Favicon & Seo meta -->
     <link rel="icon" 
           type="image/ico" 
           href="/images/icons/favicon.ico">
     <title>Welcome Hilltop B&B</title>
     <meta name="description" content="Welcome to Hilltop B&B your to-go destination for a relaxing ">
     <meta name="keywords" content="hilltop, b&b accomodation, Hilltop B&B">
+    <meta name="author" content="Hilltop B&B">
+
+    <meta property="og:title" content="Your perfect B&B destination">
+    <meta property="og:description" content="Check our lovely accomodation at Hilltop B&B and enjoy your vacation">
+    <meta property="og:image" content="https://github.com/elighidiu/Hilltop-B-B/blob/main/images/DSC_5636-300x201.png?raw=true">
+    <meta property="og:url" content="https://elighidiu.github.io/Hilltop-B-B/index.html">
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -22,7 +41,7 @@
     <!--Header with Navigation Menu-->
     <header class="negmar">
       <nav class="navbar navbar-expand-lg static-top navbar-dark">
-        <div class="container">
+        <div class="container nav-cont">
           <a class="navbar-brand fs-6" href="#">
                 Hilltop B&B
               </a>
@@ -66,24 +85,24 @@
                 <img src="images/slide1.jpg" class="d-block w-100 img-fluid imgFilter" alt="icon slide 1">
         
                 <div class="carousel-caption d-none d-md-block text-left">
-                    <h1 class="display-4">Indulge yourself in our charming rooms</h1>
-                    <p class="fs-4 fw-lighter">Let yourself be transported by the sweetness of life in one of the nine rooms which will seduce you with its incredible view. Nothing is left to chance.</p>
-                    <a href="https://elighidiu.github.io/Hilltop-B-B/service.html" class="btn btn-lg btn-primary btn-all" title="Book Now">BOOK NOW</a>
+                    <h1 class="display-4 light-text">Indulge yourself in our charming rooms</h1>
+                    <p class="fs-4 fw-lighter light-text">Let yourself be transported by the sweetness of life in one of the nine rooms which will seduce you with its incredible view. Nothing is left to chance.</p>
+                    <a href="https://elighidiu.github.io/Hilltop-B-B/service.html" class="btn btn-lg  btn-all" title="Book Now">BOOK NOW</a>
                 </div>         
             </div>
             <div class="carousel-item">
                 <img src="images/slide2.jpg" class="d-block w-100 img-fluid imgFilter" alt="icon slide 2">
                 <div class="carousel-caption d-none d-md-block text-left">
-                  <h1 class="display-4">Love for the ingredients we locally source</h1>
-                    <p class="fs-4 fw-lighter">When the weather allows, we enjoy dining outdoors, sometimes right in the middle of nature, in a beautiful meadow or on a coast from where you can admire the surroundings.</p>
+                  <h1 class="display-4 light-text">Love for the ingredients we locally source</h1>
+                    <p class="fs-4 fw-lighter light-text">When the weather allows, we enjoy dining outdoors, sometimes right in the middle of nature, in a beautiful meadow or on a coast from where you can admire the surroundings.</p>
                     <a href="https://elighidiu.github.io/Hilltop-B-B/service.html" class="btn btn-lg btn-primary btn-all" title="Learn More">LEARN MORE</a>
                 </div>         
             </div>
             <div class="carousel-item">
                 <img src="images/slide3.jpg" class="d-block w-100 img-fluid imgFilter" alt="icon slide 3">
                 <div class="carousel-caption d-none d-md-block text-left">
-                  <h1 class="display-4">Nature heals the human spirit</h1>
-                    <p class="fs-4 fw-lighter">Uncover the whole area by foot, bike, mood, energy, season or curiosity. The nature’s show is on 24/7: you can also get lazy an watch it from the terrace, sauna or from inside the wooden hot tub.
+                  <h1 class="display-4 light-text">Nature heals the human spirit</h1>
+                    <p class="fs-4 fw-lighter light-text">Uncover the whole area by foot, bike, mood, energy, season or curiosity. The nature’s show is on 24/7: you can also get lazy an watch it from the terrace, sauna or from inside the wooden hot tub.
                       </p>
                     <a href="https://elighidiu.github.io/Hilltop-B-B/explore.html" class="btn btn-lg btn-primary btn-all" title="Learn More">LEARN MORE</a>
                 </div>         
@@ -120,7 +139,7 @@
       <hr class=" my-5">
          <div class="row h-100">
           <div class="col-sm-12 col-md-4 col-lg-4">
-              <div class="text-center p-3 mb-3">
+              <div class="text-center p-3 mb-3 scale-el">
                   <img src="images/room_ex.jpg" alt="first review" height="500" width="309" class="img-fluid rounded img-shomelt">
                   
               </div>
@@ -156,7 +175,7 @@
              </div>
         </div>
           <div class="col-sm-12 col-md-4 col-lg-4">
-              <div class="text-center p-3 mb-3">
+              <div class="text-center p-3 mb-3 scale-el">
                   <img src="https://github.com/elighidiu/Hilltop-B-B/blob/main/images/bike.jpeg?raw=true" alt="first review" height="500" width="309" class="img-fluid rounded img-shomerb">
                   
               </div>
@@ -177,21 +196,21 @@
      </div>       
          <div class="row pb-5">
           <div class="col-sm-12 col-md-4 col-lg-4">
-              <div class="text-center p-3 mb-3 light-bg rounded shadow py-3">
+              <div class="text-center p-3 mb-3 light-bg rounded shadow py-3 scale-el">
                   <img src="images/review1.jpg" alt="first review" height="200" class="img-fluid rounded pb-3">
                   <p class="h5">Daria</p>
                   <p class="pb-3"><em>Beautiful place, topped only by the kindness and gentleness of the people working there. The air is fresh, the food is great, the people are very nice. </em></p>
               </div>
           </div>
           <div class="col-sm-12 col-md-4 col-lg-4">
-               <div class="text-center p-3 mb-3 light-bg rounded shadow">
+               <div class="text-center p-3 mb-3 light-bg rounded shadow scale-el">
                    <img src="images/review2.jpg" alt="second review" height="200" class="img-fluid rounded pb-3">
                    <p class="h5">Anna</p>
                    <p class="pb-3"><em>Incredible place! It is more than a vacation, it's an authentic and memorable experience. The people are friendly and warm hearted, the surroundings are like a fairy tale.</em>
                 </div>
            </div>
            <div class="col-sm-12 col-md-4 col-lg-4">
-               <div class="text-center p-3 mb-3 light-bg rounded shadow">
+               <div class="text-center p-3 mb-3 light-bg rounded shadow scale-el">
                    <img src="images/review3.jpg" alt="third review" height="200" class="img-fluid rounded pb-3">
                    <p class="h5">Jim</p>
                    <p class="pb-3"><em>The silence of nature is everywhere and it's the perfect location of you want to escape the world. Nevertheless, the room was extremely clean and the bed is the best I 've ever slept.</em>
@@ -239,7 +258,7 @@
           <div class="col-sm-12 col-md-6 col-lg-6">
             <div class="text-center">
              <p> Rue Laloy Chenet 4 08250 Chatel Chéhéry </p>
-             <p> Tel: <a class="f-link" href="tel:+3323-181-6320">+33 2 31 81 63 20</a></br>
+             <p> Tel: <a class="f-link" href="tel:+3323-181-6320">+33 2 31 81 63 20</a><br>
                 Mail: <a class="f-link" href="mailto:contact@hilltop.com">contact@hilltop.com</a>
               </p>
             </div>
