@@ -1,6 +1,21 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111111111-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111111111-1');
+    </script>
+
     <title>Services</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
@@ -10,14 +25,34 @@
     <meta
             name="keywords"
             content="reservation, options, standard, deluxe, premium, services, accessibility, wheelchairs, diet preferences">
-
+    <meta property="og:title" content="Your perfect B&B destination">
+    <meta property="og:description" content="Check our lovely accomodation at Hilltop B&B and enjoy your vacation">
+    <meta property="og:image" content="https://github.com/elighidiu/Hilltop-B-B/blob/main/images/ogimage.jpg">
+    <meta property="og:url" content="https://elighidiu.github.io/Hilltop-B-B/index.html%22%3E">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta name="author" content="Jens">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/ico" href="images/icons/favicon.ico">
     <style>
+        .pic-style {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+            -webkit-transition: all 1s ease;
 
+        }
 
+        .pic-style:hover {
+
+            -webkit-filter: grayscale(0%);
+            filter: none;
+            transition: 1s ease;
+        }
     </style>
 
 
@@ -26,7 +61,7 @@
 
 <!--parallax + nav-->
 <div class="wrapper   parallax-window  overflow-hidden" data-parallax="scroll" data-speed="0.5" data-bleed="10"
-     data-image-src="images/DSC_5636-300x201.png" alt="house Hilltop">
+     data-image-src="images/services.png">
     <header>
         <nav class="navbar navbar-expand-lg static-top  navbar-dark">
             <div class="container">
@@ -40,7 +75,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item ">
-                            <a class="nav-link" href="index.html" title="Homepage" target="">Home</a>
+                            <a class="nav-link" href="index.html" title="Homepage">Home</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="service.html" title="Services">Services <span class="sr-only">(current)</span></a>
@@ -49,7 +84,7 @@
                             <a class="nav-link" href="explore.html" title="Explore">Explore</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html" title="Contact" target="">Contact</a>
+                            <a class="nav-link" href="contact.html" title="Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -58,24 +93,27 @@
     </header>
 
     <div class="row h-100 align-content-center ">
-        <h1 class=" mx-auto text-white  display-4">All our services</h1>
+        <h1 class=" mx-auto light-text  display-4">What we have to offer</h1>
     </div>
 
 </div>
 
-<div class="container-fluid backgroundcolorgreen text-white">
-<div class="container-fluid text-center  marge py-5 ">
-    <h1>Special Services</h1>
-    <p class="my-5">Hilltop is easily accessible for people in wheelchairs. First and foremost, you will find a ramp at the entrance of the property.
-        Also, to reach the second floor you might use the lift to get there.
-        But all necessary facilities are placed downstairs such as the bedroom, bathroom, and the kitchen.
-        The wide corridors and doorways will make it easy to maneuver through the house with a wheelchair.
-        In the bathrooms you will find Handrails on the walls and a roll-in shower.
-        <br>
-        If there are any food request (vegan, allergies, halal,...) please let us know beforehand so we can take this into account.</p>
+<!--services-->
+<div class="container-fluid backgroundcolorgreen light-text">
+    <div class="container-fluid text-center  marge py-5 light-text ">
+        <h1>Special Services</h1>
+        <p class="my-5">Hilltop is easily accessible for people in <strong>wheelchairs</strong>. First and foremost, you
+            will find a <strong>ramp</strong> at the entrance of the property.
+            Also, to reach the second floor you might use the <strong>lift</strong> to get there.
+            But all necessary facilities are placed downstairs such as the <em>bedroom, bathroom, and the kitchen</em>.
+            The wide corridors and doorways will make it easy to maneuver through the house with a wheelchair.<br>
+            In the bathrooms you will find <strong>handrails</strong> on the walls and a <strong>roll-in shower</strong>.
+            <br>
+            If there are any food requests (vegan, allergies, halal,...) please let us know beforehand so we can take
+            this into account.</p>
 
 
-</div>
+    </div>
 </div>
 
 <!--container + cards -->
@@ -84,50 +122,61 @@
     <div class="row  justify-content-around  h-100">
 
         <div class="col-sm-12 col-md-12 col-lg-4 ">
-            <div class="rounded p-1 my-3 shadow-lg achtergrondwit card-hover2 "> <!--data-toggle="modal" data-target="#myModalS"-->
+            <div class="rounded p-1 my-3 shadow-lg achtergrondwit card-hover2 ">
+                <!--data-toggle="modal" data-target="#myModalS"-->
 
                 <h2 class="mt-3">Standard Option</h2>
                 <h3>€50/day</h3>
-                <p class="text-left m-5 tekstgrote "> -Free WiFi<br>
-                    -Bathroom<br>
-                    -Towels<br>
-                    -Toiletries<br>
-                    -2 twin beds<br>
-                    -Breakfast
-                </p>
+
+                <ul class="text-left">
+                    <li>Free WiFi</li>
+                    <li>Bathroom</li>
+                    <li>Towels</li>
+                    <li>Toiletries</li>
+                    <li>2 twin beds</li>
+                    <li>Breakfast</li>
+                </ul>
+
                 <button class="btn btn-hover btn-g rounded-pill font-weight-bold mb-3" title="learn more"
                         data-toggle="modal" data-target="#myModalS">RESERVE
                 </button>
             </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4">
-            <div class="rounded p-1 my-3 shadow-lg achtergrondwit card-hover2" >
+            <div class="rounded p-1 my-3 shadow-lg achtergrondwit card-hover2">
 
                 <h2 class="mt-3">Deluxe Option</h2>
                 <h3>€60/day</h3>
-                <p class="text-left m-5 tekstgrote"> -Free WiFi<br>
-                    -Bathroom<br>
-                    -Towels<br>
-                    -Toiletries<br>
-                    -1 queensize bed<br>
-                    -breakfast, lunch
-                </p>
+
+                    <ul class="text-left">
+                    <li>Free WiFi</li>
+                    <li>Bathroom</li>
+                    <li>Towels</li>
+                    <li>Toiletries</li>
+                    <li>1 queensize bed</li>
+                    <li>Breakfast, Lunch</li>
+            </ul>
+
                 <button class="btn btn-hover btn-g rounded-pill font-weight-bold mb-3" title="learn more"
                         data-toggle="modal" data-target="#myModalD">RESERVE
                 </button>
             </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4">
-            <div class="rounded p-1 my-3 shadow-lg achtergrondwit card-hover2" >
+            <div class="rounded p-1 my-3 shadow-lg achtergrondwit card-hover2">
 
                 <h2 class="mt-3">Premium Option</h2>
                 <h3>€70/day</h3>
-                <p class="text-left m-5 tekstgrote"> -Free WiFi<br>
-                    -Bathroom<br>
-                    -Towels<br>
-                    -Toiletries<br>
-                    -1 kingsize bed<br>
-                    -breakfast, lunch, diner</p>
+
+                <ul class="text-left">
+                    <li>Free WiFi</li>
+                    <li>Bathroom</li>
+                    <li>Towels</li>
+                    <li>Toiletries</li>
+                    <li>1 kingsize bed</li>
+                    <li>Breakfast, Lunch, Dinner</li>
+            </ul>
+
                 <button class="btn btn-hover btn-g rounded-pill font-weight-bold mb-3" title="learn more"
                         data-toggle="modal" data-target="#myModalP">RESERVE
                 </button>
@@ -144,7 +193,6 @@
         <div class="modal-content achtergrond">
             <div class="modal-header">
                 <h4 class="modal-title">Standard Option €50/day</h4>
-                <h5 class="modal-title"></h5>
                 <button type="button" class="close " data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -159,24 +207,22 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Name</label>
-                        <input type="name" class="form-control" id="inputName1" aria-describedby="nameHelp"
+                        <input type="text" class="form-control" id="inputName1"
                                placeholder="Enter name">
 
                         <label for="exampleInputEmail1">Country</label>
-                        <input type="country" class="form-control" id="exampleInputCountry"
-                               aria-describedby="countryHelp" placeholder="Enter country">
+                        <input type="text" class="form-control" id="exampleInputCountry"
+                               placeholder="Enter country">
 
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <input type="email" class="form-control" id="exampleInputEmail1"
                                placeholder="Enter email">
 
                         <label for="exampleInputEmail1">Begin-date</label>
-                        <input type="date" class="form-control" id="example-date-input1" aria-describedby="emailHelp"
-                               placeholder="Enter email">
+                        <input type="date" class="form-control" id="example-date-input1">
 
                         <label for="exampleInputEmail1">End-date</label>
-                        <input type="date" class="form-control" id="example-date-input2" aria-describedby="emailHelp"
-                               placeholder="Enter email">
+                        <input type="date" class="form-control" id="example-date-input2">
 
                     </div>
 
@@ -199,7 +245,6 @@
         <div class="modal-content achtergrond">
             <div class="modal-header">
                 <h4 class="modal-title">Deluxe Option €60/day</h4>
-                <h5 class="modal-title"></h5>
                 <button type="button" class="close " data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -214,24 +259,22 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Name</label>
-                        <input type="name" class="form-control" id="inputName2" aria-describedby="nameHelp"
+                        <input type="text" class="form-control" id="inputName2"
                                placeholder="Enter name">
 
                         <label for="exampleInputEmail1">Country</label>
-                        <input type="country" class="form-control" id="exampleInputCountry2"
-                               aria-describedby="countryHelp" placeholder="Enter country">
+                        <input type="text" class="form-control" id="exampleInputCountry2"
+                               placeholder="Enter country">
 
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp"
+                        <input type="email" class="form-control" id="exampleInputEmail2"
                                placeholder="Enter email">
 
                         <label for="exampleInputEmail1">Begin-date</label>
-                        <input type="date" class="form-control" id="example-date-input3" aria-describedby="emailHelp"
-                               placeholder="Enter email">
+                        <input type="date" class="form-control" id="example-date-input3">
 
                         <label for="exampleInputEmail1">End-date</label>
-                        <input type="date" class="form-control" id="example-date-input4" aria-describedby="emailHelp"
-                               placeholder="Enter email">
+                        <input type="date" class="form-control" id="example-date-input4">
 
                     </div>
 
@@ -254,7 +297,6 @@
         <div class="modal-content achtergrond">
             <div class="modal-header">
                 <h4 class="modal-title">Premium Option €70/day</h4>
-                <h5 class="modal-title"></h5>
                 <button type="button" class="close " data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -269,24 +311,22 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Name</label>
-                        <input type="name" class="form-control" id="inputName3" aria-describedby="nameHelp"
+                        <input type="text" class="form-control" id="inputName3"
                                placeholder="Enter name">
 
                         <label for="exampleInputEmail1">Country</label>
-                        <input type="country" class="form-control" id="exampleInputCountr3"
-                               aria-describedby="countryHelp" placeholder="Enter country">
+                        <input type="text" class="form-control" id="exampleInputCountr3"
+                               placeholder="Enter country">
 
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp"
+                        <input type="email" class="form-control" id="exampleInputEmail3"
                                placeholder="Enter email">
 
                         <label for="exampleInputEmail1">Begin-date</label>
-                        <input type="date" class="form-control" id="example-date-input6" aria-describedby="emailHelp"
-                               placeholder="Enter email">
+                        <input type="date" class="form-control" id="example-date-input6">
 
                         <label for="exampleInputEmail1">End-date</label>
-                        <input type="date" class="form-control" id="example-date-input5" aria-describedby="emailHelp"
-                               placeholder="Enter email">
+                        <input type="date" class="form-control" id="example-date-input5">
 
                     </div>
 
@@ -316,15 +356,24 @@
             </div>
 
 
-                <button type="button" class="btn btn-hover btn-g rounded-pill font-weight-bold p-2 m-2" data-dismiss="modal">
-                    Close
-                </button>
-            </div>
+            <button type="button" class="btn btn-hover btn-g rounded-pill font-weight-bold p-2 m-2"
+                    data-dismiss="modal">
+                Close
+            </button>
         </div>
     </div>
+</div>
+
+<div class="container-fluid ">
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-12 col-lg-7 text-center ">
+            <img class="pic-style" src="images/imagefood.jpeg" alt="food">
+        </div>
+    </div>
+</div>
 
 <!--footer -->
-<footer class="container-fluid py-3 ">
+<footer class="container-fluid py-3">
     <div class="container">
         <div class="row">
 
@@ -337,17 +386,20 @@
             <div class="col-sm-12 col-md-6 col-lg-6">
                 <div class="text-center">
                     <p> Rue Laloy Chenet 4 08250 Chatel Chéhéry </p>
-                    <p> Tel: +33 2 31 81 63 20<br>
-                        Mail: contact@hilltop.com
+                    <p> Tel: <a class="f-link" href="tel:+3323-181-6320">+33 2 31 81 63 20</a><br>
+                        Mail: <a class="f-link" href="mailto:contact@hilltop.com">contact@hilltop.com</a>
                     </p>
                 </div>
 
             </div>
             <div class="col-sm-12 col-md-3 col-lg-3  align-self-center">
                 <div class="text-center">
-                    <img src="images/icons/facebook.png" alt="facebook" width="32" height="32">
-                    <img src="images/icons/instagram.png" alt="instagram" width="32" height="32">
-                    <img src="images/icons/tripadvisor.png" alt="trip advisor" width="32" height="32">
+                    <a href="https://www.facebook.com" title="Facebook" rel="noopener" target="_blank"><img
+                            src="images/icons/facebook.png" alt="facebook" width="32" height="32"></a>
+                    <a href="https://www.instagram.com" title="Instagram" target="_blank" rel="noopener"><img
+                            src="images/icons/instagram.png" alt="instagram" width="32" height="32"></a>
+                    <a href="https://www.tripadvisor.com" title="Tripadvisor" target="_blank" rel="noopener"><img
+                            src="images/icons/tripadvisor.png" alt="trip advisor" width="32" height="32"></a>
                 </div>
 
             </div>
