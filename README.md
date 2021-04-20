@@ -1,6 +1,6 @@
 # Hilltop B&B website group project
 ###### https://elighidiu.github.io/Hilltop-B-B/index.html
-###### developed by: Elisabeta, Izidor, Jens, Mari
+###### developed by: [Elisabeta,](https://github.com/elighidiu) [Izidor,](https://github.com/izidormaklary) [Jens,](https://github.com/JensDeNijs) [Mari](https://github.com/mari-mizutani)   
 
 - Homepage Elisabeta
 - Services Jens
