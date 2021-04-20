@@ -106,6 +106,7 @@ margin-bottom: -5em;
 .btn-all:hover, .btn-all:active,.btn-all:visited { 
     border-color: #815841; 
     background-color: #815841;
+    color:#f8f8f8;
     }
 
 .btn-all a { 
