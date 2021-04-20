@@ -52,13 +52,13 @@ A good requirement for this list is something that people should have been doing
 ### Perfection is not a detail
 - [ ] All buttons and links work
 - [ ] All elements work and are complete (menu, lists, images, ...)
-- [ ] Everything on the page has a function, a reason to be there
-- [ ] No dead links
-- [ ] English and dutch are not mixed
+- [x] Everything on the page has a function, a reason to be there
+- [x] No dead links
+- [x] English and dutch are not mixed
 - [ ] No spelling errors
 - [ ] No grammar errors
 - [ ] The website is deployed somewhere
-- [ ] Everything is relevant (no image of a barber on the website of a baker)
+- [x] Everything is relevant (no image of a barber on the website of a baker)
 
 ### Content
 - [x] Openinghours (if needed)
@@ -84,7 +84,7 @@ A good requirement for this list is something that people should have been doing
 - [ ] White is almost white but not #fff
 - [ ] The website is not an ugly color mess
 - [ ] The styling is consistent
-- [ ] It is not four totally different pages thrown together
+- [x] It is not four totally different pages thrown together
 - [ ] Everything works even if you are colorblind
 
 ### Not everyone has free 4G aka speed matters
@@ -130,7 +130,7 @@ A good requirement for this list is something that people should have been doing
 - [ ] Keywords meta tag
 - [ ] Description meta tag
 - [ ] Title of the page is included
-- [ ] Favicon is included
+- [x] Favicon is included
 - [ ] Responsive meta tag is included
 - [ ] Charset is defined
 - [ ] Author is defined
