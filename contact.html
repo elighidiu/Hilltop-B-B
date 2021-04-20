@@ -7,9 +7,13 @@
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <meta name="description" content="Contact Hilltop B&B">
     <meta name="keywords" content="hilltop, b&b, northern-france, hotel, Chatel-Chehery, bed and breakfast, airbnb, contact ">
-    <meta name="description" content="Hilltop B&B in Northern-France. Check in or contact us."></head>
+    <meta name="description" content="Hilltop B&B in Northern-France. Check in or contact us.">
+    <meta property="og:title" content="Hilltop B&B">
+    <meta property="og:description" content="Bed an Breakfest in Northern-France. Check in now!">
+    <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+    <meta property="og:url" content="https://elighidiu.github.io/Hilltop-B-B/index.html">
     <!-- Bootstrap CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet"><link>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/ico" href="images/icons/favicon.ico">
@@ -25,9 +29,7 @@
         
       
       }  
-      .achtergrond {
-            background-color: #e3dcd2;
-        }
+      
      .card-hover2:hover{
             background-color: #e0e0e0;
             -webkit-transition: all 0.4s;
@@ -41,7 +43,7 @@
 <body>
 
 <!-- paralax image heading with sticky nav-->
-<div class="wrapper   parallax-window" data-parallax="scroll" data-speed="0.5" data-bleed="10" data-image-src="./images/couple.jpg">
+<div class="wrapper   parallax-window" data-parallax="scroll" data-speed="0.5" data-bleed="10" data-image-src="./images/couple.jpg" alt="parallax image" >
     <!-- Nav -->
     <header class=" position-sticky sticky-top  ">
         <nav class="navbar navbar-expand-lg static-top  navbar-dark">
@@ -77,7 +79,7 @@
     </header>
  <!-- text over the image -->
     <div class="row h-100 w-75 mx-auto align-content-center">
-        <h1 class="h1 mx-auto p-2 text-white">Find out more about us</h1>
+        <h1 class="display-4 mx-auto p-2 text-light">Find out more about us</h1>
     </div>
 </div>
 <!-- introduction section -->
@@ -130,7 +132,7 @@
            
         </div>
         <div class="col-md-7 col-sm-12 ">
-            <iframe class=" w-100 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.5456490729493!2d4.952407416079475!3d49.285005979331544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ea529385d870e7%3A0x952c893e97fcd218!2s4%20Rue%20Laloy%20Chenet%2C%2008250%20Ch%C3%A2tel-Ch%C3%A9h%C3%A9ry%2C%20Frankrijk!5e0!3m2!1snl!2sbe!4v1618565407950!5m2!1snl!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe title="location" class=" w-100 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.5456490729493!2d4.952407416079475!3d49.285005979331544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ea529385d870e7%3A0x952c893e97fcd218!2s4%20Rue%20Laloy%20Chenet%2C%2008250%20Ch%C3%A2tel-Ch%C3%A9h%C3%A9ry%2C%20Frankrijk!5e0!3m2!1snl!2sbe!4v1618565407950!5m2!1snl!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         
     </div>
@@ -164,8 +166,8 @@
                             <li class="list-group-item bg-transparent border-0">
                                 <a class=" btn-all btn" href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">whatsapp</a>
                             </li>
-                            <li class="list-group-item bg-transparent border-0">
-                                <a class=" btn-all btn" href="https://facebook.com" target="_blank" rel="noopener noreferrer">facebook</a>
+                            <li class="list-group-item bg-transparent border-0 ">
+                                <a class=" btn-all btn  " href="https://facebook.com" target="_blank" rel="noopener noreferrer">facebook</a>
                             </li>
                         </ul>
                     </div>
@@ -193,7 +195,7 @@
                     <div class="form-row">
                         <div class="form-group col-12">
                             <label for="inputMessage4">Message</label>
-                            <textarea name="Contact-Message" class="form-control" rows="6″ cols="20″>
+                            <textarea name="Contact-Message" id="inputMessage4" class="form-control" rows="6″ cols="20″>
                             </textarea>
                         </div>
                     </div>
@@ -210,43 +212,43 @@
 
 <!-- Footer -->
 
-<footer class="container-fluid py-3 ">
+<footer class="container-fluid py-3">
     <div class="container">
         <div class="row">
-          
+
             <div class="col-sm-12 col-md-3 col-lg-3 align-self-center">
-              <div class="text-center">
-                Hilltop B&B
-              </div>
-              
+                <div class="text-center">
+                    Hilltop B&B
+                </div>
+
             </div>
             <div class="col-sm-12 col-md-6 col-lg-6">
-              <div class="text-center">
-               <p> Rue Laloy Chenet 4 08250 Chatel Chéhéry </p>
-               <p> Tel: +33 2 31 81 63 20</br>
-                  Mail: contact@hilltop.com
-                </p>
-              </div>
-  
+                <div class="text-center">
+                    <p> Rue Laloy Chenet 4 08250 Chatel Chéhéry </p>
+                    <p> Tel: <a class="f-link" href="tel:+3323-181-6320">+33 2 31 81 63 20</a><br>
+                        Mail: <a class="f-link" href="mailto:contact@hilltop.com">contact@hilltop.com</a>
+                    </p>
+                </div>
+
             </div>
             <div class="col-sm-12 col-md-3 col-lg-3  align-self-center">
-              <div class="text-center">
-                <img src="images/icons/facebook.png" alt="facebook" width="32" height="32">
-                <img src="images/icons/instagram.png" alt="instagram" width="32" height="32">
-                <img src="images/icons/tripadvisor.png" alt="trip advisor" width="32" height="32">
+                <div class="text-center">
+                    <a href="https://www.facebook.com" title="Facebook" rel="noopener" target="_blank"><img src="images/icons/facebook.png" alt="facebook" width="32" height="32"></a>
+                    <a href="https://www.instagram.com" title="Instagram" target="_blank" rel="noopener"><img src="images/icons/instagram.png" alt="instagram" width="32" height="32"></a>
+                    <a href="https://www.tripadvisor.com" title="Tripadvisor" target="_blank" rel="noopener"><img src="images/icons/tripadvisor.png" alt="trip advisor" width="32" height="32"></a>
                 </div>
-  
+
             </div>
         </div>
-        <hr>
+        <hr class="hrfooter">
         <div class="row">
-          <div class="col-sm-12">
-            <div class="text-center">
-            <p>&#169; 2021 Hilltop B&B. All rights reserved</p>
-          </div>
-          </div>
+            <div class="col-sm-12">
+                <div class="text-center">
+                    <p>&#169; 2021 Hilltop B&B. All rights reserved</p>
+                </div>
+            </div>
         </div>
-    </div>  
+    </div>
 </footer>
 <script lang="js">
     document.getElementById("Submitemail").addEventListener("click", function (e) {
