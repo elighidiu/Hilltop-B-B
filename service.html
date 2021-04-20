@@ -35,24 +35,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/ico" href="images/icons/favicon.ico">
     <style>
-        .pic-style {
-            width: 100%;
-            height: auto;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            filter: grayscale(100%);
-            -webkit-filter: grayscale(100%);
-            -webkit-transition: all 1s ease;
 
-        }
 
-        .pic-style:hover {
-
-            -webkit-filter: grayscale(0%);
-            filter: none;
-            transition: 1s ease;
-        }
     </style>
 
 
@@ -364,10 +348,16 @@
     </div>
 </div>
 
-<div class="container-fluid ">
-    <div class="row justify-content-center">
-        <div class="col-sm-12 col-md-12 col-lg-7 text-center ">
-            <img class="pic-style" src="images/imagefood.jpeg" alt="food">
+
+<!--grayscale pic -->
+<div class="container-fluid vis">
+    <div class="row justify-content-center ">
+        <div class="col-sm-12 col-md-12 col-lg-7 text-center pb-5 ">
+            <div class="overlay invis">
+                <div class="text">Delicious food at the diner table.</div>
+            </div>
+            <img class="pic-style" src="images/imagefood.jpeg" alt="food" title="Delicious food at the diner table.">
+
         </div>
     </div>
 </div>

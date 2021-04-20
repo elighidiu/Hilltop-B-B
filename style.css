@@ -181,6 +181,33 @@ margin-bottom: -5em;
 
 }
 
+.pic-style {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 1s ease;
+
+}
+
+.pic-style:hover {
+
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}
+.invis div{
+    visibility: hidden;
+
+}
+.vis:hover div{
+    visibility: visible;
+
+}
+
 /*//////// for explore page ////////*/
 .bg-explore{
     background-image: url(images/dear.jpeg);
